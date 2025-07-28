@@ -4,7 +4,7 @@
 Bandit is the first OverTheWire wargame focused on teaching the basics of Linux commands, SSH, and file navigation.
 
 - **Official URL:** [https://overthewire.org/wargames/bandit/](https://overthewire.org/wargames/bandit/)
-- **Difficulty:** Beginner
+- **Difficulty:** Beginner.
 - **Goal:** Get comfortable with the Linux shell and essential commands.
 
 ## Progress

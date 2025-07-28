@@ -5,7 +5,7 @@ This repository contains my personal notes, solutions, and lessons learned from 
 ![OverTheWire](./overthewire_bg.webp)
 
 ## Wargames Covered
-- [Bandit](./Bandit/README.md) - Basic Linux and security concepts
+- [Bandit](./bandit/README.md) - Basic Linux and security concepts
 
 ## Disclaimer
 These notes are for educational purposes only. They avoid sharing direct passwords or full answers as per OverTheWire rules.
