@@ -1,4 +1,5 @@
 # Bandit Level 0 → Level 1
+(Updated: xx xxxx xxxx)
 
 ## Goal
 _Describe the objective of the level in your own words._

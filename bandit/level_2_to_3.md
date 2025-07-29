@@ -1,5 +1,5 @@
 # Bandit Level 2 → Level 3
-
+(Updated: 29 July 2025)
 
 ## Credentials
 - **Username:** `bandit2`
