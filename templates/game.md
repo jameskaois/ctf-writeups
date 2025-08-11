@@ -53,4 +53,4 @@ Bandit is the first OverTheWire wargame focused on teaching the basics of Linux 
 - File searching (`find`, `grep`)
 
 ## Disclaimer
-These notes are for **educational purposes only**. They don’t share actual level passwords but focus on methodology and commands.
+These notes are for **educational purposes only**. You can depend on it to play OverTheWire Leviathan games.
