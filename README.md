@@ -6,6 +6,7 @@ This repository contains my personal notes, solutions, and lessons learned from 
 
 ## Wargames Covered
 - [Bandit](./bandit/README.md) - Basic Linux and security concepts
+- [Leviathan](./leviathan/README.md) - Introduction to simple CTF challenges focusing on file permissions, SUID binaries, password discovery, and basic binary exploitation techniques
 
 ## Disclaimer
 These notes are for educational purposes only. They avoid sharing direct passwords or full answers as per OverTheWire rules.
