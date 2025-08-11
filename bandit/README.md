@@ -48,7 +48,87 @@ Bandit is the first OverTheWire wargame focused on teaching the basics of Linux 
 
 
 ## Tools Learned
-(updating)
+1. Navigating the File System
+- `pwd` – Show current working directory
+- `ls`, `ls -la` – List files (including hidden ones)
+- `cd` – Change directory
+- `file <filename>` – Identify file type
+
+2. Viewing Files
+- `cat` – View file content
+- `less`, `more` – Scroll through file content
+- `head`, `tail` – Show first/last lines of a file
+
+3. Reading Special & Hidden Files
+- Handling spaces in filenames:
+```
+cat "file name with spaces"
+```
+- Reading hidden files (.filename)
+- Reading files with special characters using escape \ or quotes
+
+4. Permissions & Ownership
+chmod – Change file permissions
+- `chown` – Change file owner
+- `ls -l` – Check permissions
+- Understanding permission bits (rwxr-xr--)
+
+5. Searching & Filtering
+- `grep <pattern> <file>` – Search for text in files
+- `find` – Locate files by name, type, or permissions
+- `grep -R <pattern> .` – Recursive search in all files
+
+6. Working with Archives & Compression
+- `tar -xf file.tar` – Extract tar files
+- `gzip -d file.gz` – Decompress .gz
+- `bzip2 -d file.bz2` – Decompress .bz2
+- `xz -d file.xz` – Decompress .xz
+
+7. Networking Basics
+- `nc` (netcat) – Connect to ports or listen
+- `telnet` – Connect to a server
+- `ssh user@host -p <port>` – Connect to SSH
+- Using redirection to send/receive data from network connections
+
+8. File Redirection & Piping
+- `>` – Redirect output to a file (overwrite)
+- `>>` – Append output to a file
+- `<` – Redirect input from a file
+- `|` – Pipe output to another command
+
+Example:
+```
+grep "password" data.txt | sort | uniq
+```
+
+9. Encoding & Decoding
+- `base64` – Encode/decode Base64 data
+- `xxd` – View/edit files in hex
+- `strings` – Extract printable strings from binary files
+
+10. Working with Processes
+- `ps` – List running processes
+- `top`, `htop` – Monitor system usage
+- `kill` – End processes
+
+11. Scripting & Automation
+- Running shell scripts:
+```
+./script.sh
+bash script.sh
+```
+- Using loops, variables, and command substitution:
+```
+for i in {1..10}; do echo $i; done
+```
+
+12. Privilege Escalation Basics
+- Understanding setuid files
+- Knowing how to switch users:
+```
+su <username>
+```
+- Using `sudo` for commands requiring root
 
 ## Disclaimer
 These notes are for **educational purposes only**. You can depend on it to play OverTheWire Bandit games.
