@@ -7,7 +7,7 @@
 
 ## Connection
 ```bash
-ssh leviathan2@bandit.labs.overthewire.org -p 2223
+ssh leviathan2@leviathan.labs.overthewire.org -p 2223
 ```
 
 ## Hints & Commands Learned
