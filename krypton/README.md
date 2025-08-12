@@ -19,7 +19,14 @@ Krypton – Introduction to cryptography basics, covering classical ciphers, enc
 | 6 → 7  | [level_6_to_7.md](./level_6_to_7.md)   |
 
 ## Tools Learned
-(updating)
+- Basics of classical cryptography
+- Frequency analysis for breaking ciphers
+- Caesar cipher encryption and decryption
+- Substitution cipher concepts
+- Vigenère cipher basics
+- Using the Linux shell to manipulate and decode text
+- Automating decryption with simple scripts
+- Recognizing patterns in encrypted text
 
 ## Disclaimer
 These notes are for **educational purposes only**. You can depend on it to play OverTheWire Krypton games.
