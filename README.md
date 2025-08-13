@@ -11,4 +11,4 @@ This repository contains my personal notes, solutions, and lessons learned from 
 - [Natas](./natas/README.md) - Introduction to web application security, focusing on vulnerabilities like source code disclosure, HTTP manipulation, authentication bypass, injection attacks, and common web exploitation techniques
 
 ## Disclaimer
-These notes are for educational purposes only. They avoid sharing direct passwords or full answers as per OverTheWire rules.
+These notes are for educational purposes only. They avoid sharing full steps (just simple steps that can you can take them as hints). And if you get stuck for too long, there is password for you to get to the next level.
