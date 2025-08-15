@@ -1,14 +1,35 @@
-# OverTheWire Wargames Journey
+# CTF Solutions & Write-ups
 
-This repository contains my personal notes, solutions, and lessons learned from completing OverTheWire wargames.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20MacOS-lightgrey.svg)
+![Category](https://img.shields.io/badge/Category-CTF%20%7C%20Security%20Research-red.svg)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange.svg)
+![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-lightpink.svg)
 
-![OverTheWire](./overthewire_bg.webp)
+> ⚠️ **Disclaimer:** This repository is for educational purposes only.  
+> It may contain spoilers, solution scripts, and detailed steps to solve specific challenges.  
+> Use the knowledge here ethically and legally.
 
-## Wargames Covered
-- [Bandit](./bandit/README.md) - Basic Linux and security concepts
-- [Leviathan](./leviathan/README.md) - Introduction to simple CTF challenges focusing on file permissions, SUID binaries, password discovery, and basic binary exploitation techniques
-- [Krypton](./krypton/README.md) - Introduction to cryptography basics, covering classical ciphers, encryption/decryption techniques, and password cracking methods
-- [Natas](./natas/README.md) - Introduction to web application security, focusing on vulnerabilities like source code disclosure, HTTP manipulation, authentication bypass, injection attacks, and common web exploitation techniques
+---
 
-## Disclaimer
-These notes are for educational purposes only. They avoid sharing full steps (just simple steps that can you can take them as hints). And if you get stuck for too long, there is password for you to get to the next level.
+## About
+This repo is my personal archive of **Capture The Flag (CTF)** challenges I’ve solved across different platforms and competitions.  
+It may contain:
+- 🧠 Thought process and reasoning behind each solution  
+- 🛠️ Scripts, exploits, payloads, and helper tools I wrote along the way  
+- 📷 Screenshots and outputs for verification  
+- 📝 Detailed explanations of vulnerabilities and concepts  
+- 🚧 Unfinished or partial solutions for challenges I’m still working on
+
+---
+
+## Games Covered
+- [OverTheWire](./overthewire/README.md)
+
+---
+
+## Getting Started
+Some scripts require:
+- Python 3.x
+- `requests`, `pwntools`, or other CTF-related libraries
