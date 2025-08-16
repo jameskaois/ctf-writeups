@@ -1,4 +1,4 @@
-import requests, string, time
+import requests, string
 
 url = "http://natas17.natas.labs.overthewire.org/"
 auth = ("natas17", "EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC")
