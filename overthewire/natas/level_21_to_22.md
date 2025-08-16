@@ -18,4 +18,4 @@ Level url: [http://natas21.natas.labs.overthewire.org/](http://natas21.natas.lab
 4. Step 4 - Take the password to the next level.
 
 ## Next Level Password
-`d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz</pre>`
+`d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz`
