@@ -26,6 +26,7 @@ It may contain:
 
 ## Games Covered
 - [OverTheWire](./overthewire/README.md)
+- [TryHackMe](./tryhackme/README.md)
 
 ---
 
