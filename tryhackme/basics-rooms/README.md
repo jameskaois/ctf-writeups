@@ -8,3 +8,4 @@ Linux basics, networking fundamentals, and introductory cybersecurity concepts.
 
 ## Navigation
 - [Linux Modules](./linux-modules.md)
+- [Linux Fundamentals Part 1](./linux-fundamentals-part-1.md)
