@@ -9,6 +9,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Linux Modules](./linux-modules.md)
 - [Linux Fundamentals Part 1](./linux-fundamentals-part-1.md)
 - [The Hacker Methodology](./the-hacker-methodology.md)
+- [Pentesting Fundamentals](./pentesting-fundamentals.md)
 
 ## Disclaimer
 These writeups are for **educational purposes only**.  
