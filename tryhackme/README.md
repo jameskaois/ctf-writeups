@@ -8,6 +8,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 ## Rooms/CTFs Covered
 - [Learning Cyber Security](./beginner-path-intro.md)
 - [Careers In Cyber](./careers-in-cyber.md)
+- [Cyber Kill Chain](./cyber-kill-chain.md)
 - [Defensive Security Intro](./defensive-security-intro.md)
 - [DNS In Detail](./dns-in-detail.md)
 - [Further Nmap](./further-nmap.md)
@@ -26,6 +27,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Red Team OPSEC](./red-team-opsec.md)
 - [Starting Out In Cyber Sec](./starting-out-in-cyber-sec.md.md)
 - [The Hacker Methodology](./the-hacker-methodology.md)
+- [Unified Kill Chain](./unified-kill-chain.md)
 - [Web Application Security](./web-application-security.md)
 - [What Is Networking](./whatisnetworking.md)
 
