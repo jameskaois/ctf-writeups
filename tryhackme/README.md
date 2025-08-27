@@ -7,6 +7,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 
 ## Rooms/CTFs Covered
 - [Learning Cyber Security](./beginner-path-intro.md)
+- [Blue](./blue.md)
 - [Careers In Cyber](./careers-in-cyber.md)
 - [Cyber Kill Chain](./cyber-kill-chain.md)
 - [Defensive Security Intro](./defensive-security-intro.md)
