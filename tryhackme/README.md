@@ -32,6 +32,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Unified Kill Chain](./unified-kill-chain.md)
 - [Web Application Security](./web-application-security.md)
 - [What Is Networking](./whatisnetworking.md)
+- [Windows Fundamentals 1](./windows-fundamentals-1.md)
 
 ## Disclaimer
 These writeups are for **educational purposes only**.  
