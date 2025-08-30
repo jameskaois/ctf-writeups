@@ -39,19 +39,19 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 
 ## TryHackMe Badges  
 
-| [![cat linux.txt](./badges/cat_linux_txt.png)](https://tryhackme.com/p/jameskaois) | [![OHSINT](./badges/ohsint.png)](https://tryhackme.com/p/jameskaois) |
+| [![cat linux.txt](./badges/cat_linux_txt.png)](https://tryhackme.com/jameskaois/badges/terminaled) | [![OHSINT](./badges/ohsint.png)](https://tryhackme.com/jameskaois/badges/ohsint) |
 |------------------------------------------------|------------------------------------------------|
 | *cat linux.txt* | *OHSINT* |
 
-| [![Webbed](./badges/web-fund.png)](https://tryhackme.com/p/jameskaois) | [![Blue](./badges/blue.png)](https://tryhackme.com/p/jameskaois) |
+| [![Webbed](./badges/web-fund.png)](https://tryhackme.com/jameskaois/badges/web-fund) | [![Blue](./badges/blue.png)](https://tryhackme.com/jameskaois/badges/blue) |
 |------------------------------------------------|------------------------------------------------|
 | *Web Fund* | *Blue* |
 
-| [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/p/jameskaois) | [![]()](https://tryhackme.com/p/jameskaois) |
+| [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/jameskaois/badges/owasp-10) | [![]()](https://tryhackme.com/p/jameskaois) |
 |------------------------------------------------|------------------------------------------------|
 | *OWASP Top 10* | ** |
 
-| [![3 Day Streak](./badges/3-day-streak.png)](https://tryhackme.com/p/jameskaois) | [![7 Day Streak](./badges/7-day-streak.png)](https://tryhackme.com/p/jameskaois) |
+| [![3 Day Streak](./badges/3-day-streak.png)](https://tryhackme.com/jameskaois/badges/3-day-streak) | [![7 Day Streak](./badges/7-day-streak.png)](https://tryhackme.com/jameskaois/badges/7-day-streak) |
 |------------------------------------------------|------------------------------------------------|
 | *3 Day Streak* | *7 Day Streak* |
 
