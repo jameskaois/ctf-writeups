@@ -34,6 +34,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [What Is Networking](./whatisnetworking.md)
 - [Windows Fundamentals 1](./windows-fundamentals-1.md)
 - [Windows Fundamentals 2](./windows-fundamentals-2.md)
+- [Windows Fundamentals 3](./windows-fundamentals-3.md)
 
 ## Disclaimer
 These writeups are for **educational purposes only**.  
