@@ -20,6 +20,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Junior Security Analyst Intro](./junior-security-analyst-intro.md)
 - [Linux Fundamentals Part 1](./linux-fundamentals-part-1.md)
 - [Linux Modules](./linux-modules.md)
+- [Network Services](./network-services.md)
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OWASP Top 10](./owasp-top-10.md)
