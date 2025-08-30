@@ -37,6 +37,24 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Windows Fundamentals 2](./windows-fundamentals-2.md)
 - [Windows Fundamentals 3](./windows-fundamentals-3.md)
 
+## TryHackMe Badges  
+
+| [![cat linux.txt](./badges/cat_linux_txt.png)](https://tryhackme.com/p/jameskaois) | [![OHSINT](./badges/ohsint.png)](https://tryhackme.com/p/jameskaois) |
+|------------------------------------------------|------------------------------------------------|
+| *cat linux.txt* | *OHSINT* |
+
+| [![Webbed](./badges/web-fund.png)](https://tryhackme.com/p/jameskaois) | [![Blue](./badges/blue.png)](https://tryhackme.com/p/jameskaois) |
+|------------------------------------------------|------------------------------------------------|
+| *Web Fund* | *Blue* |
+
+| [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/p/jameskaois) | [![]()](https://tryhackme.com/p/jameskaois) |
+|------------------------------------------------|------------------------------------------------|
+| *OWASP Top 10* | ** |
+
+| [![3 Day Streak](./badges/3-day-streak.png)](https://tryhackme.com/p/jameskaois) | [![7 Day Streak](./badges/7-day-streak.png)](https://tryhackme.com/p/jameskaois) |
+|------------------------------------------------|------------------------------------------------|
+| *3 Day Streak* | *7 Day Streak* |
+
 ## Disclaimer
 These writeups are for **educational purposes only**.  
 They are meant to serve as **hints and learning notes**. The goal is to encourage learning, problem-solving, and critical thinking while progressing through TryHackMe challenges.  
