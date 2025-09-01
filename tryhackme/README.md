@@ -47,9 +47,9 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 |------------------------------------------------|------------------------------------------------|
 | *Web Fund* | *Blue* |
 
-| [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/jameskaois/badges/owasp-10) | [![]()](https://tryhackme.com/p/jameskaois) |
+| [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/jameskaois/badges/owasp-10) | [![1st Silver League](./badges/silver-league.png)](https://tryhackme.com/jameskaois/badges/silver-league) |
 |------------------------------------------------|------------------------------------------------|
-| *OWASP Top 10* | ** |
+| *OWASP Top 10* | *1st Silver League* |
 
 | [![3 Day Streak](./badges/3-day-streak.png)](https://tryhackme.com/jameskaois/badges/3-day-streak) | [![7 Day Streak](./badges/7-day-streak.png)](https://tryhackme.com/jameskaois/badges/7-day-streak) |
 |------------------------------------------------|------------------------------------------------|
