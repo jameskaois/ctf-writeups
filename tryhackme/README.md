@@ -1,11 +1,12 @@
 # TryHackMe CTF Journey
 
 This repository contains my personal notes, writeups, and lessons learned from completing various TryHackMe rooms and challenges.  
-The focus is on documenting approaches, tools, and techniques that I used to solve each task, while keeping the writeups educational and easy to follow.  
+The focus is on documenting approaches, tools, and techniques that I used to solve each task, while keeping the writeups educational and easy to follow.
 
 ![TryHackMe](./tryhackme.png)
 
 ## Rooms/CTFs Covered
+
 - [Learning Cyber Security](./beginner-path-intro.md)
 - [Blue](./blue.md)
 - [Careers In Cyber](./careers-in-cyber.md)
@@ -37,24 +38,29 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Windows Fundamentals 2](./windows-fundamentals-2.md)
 - [Windows Fundamentals 3](./windows-fundamentals-3.md)
 
-## TryHackMe Badges  
+## TryHackMe Badges
 
 | [![cat linux.txt](./badges/cat_linux_txt.png)](https://tryhackme.com/jameskaois/badges/terminaled) | [![OHSINT](./badges/ohsint.png)](https://tryhackme.com/jameskaois/badges/ohsint) |
-|------------------------------------------------|------------------------------------------------|
-| *cat linux.txt* | *OHSINT* |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| _cat linux.txt_                                                                                    | _OHSINT_                                                                         |
 
 | [![Webbed](./badges/web-fund.png)](https://tryhackme.com/jameskaois/badges/web-fund) | [![Blue](./badges/blue.png)](https://tryhackme.com/jameskaois/badges/blue) |
-|------------------------------------------------|------------------------------------------------|
-| *Web Fund* | *Blue* |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| _Web Fund_                                                                           | _Blue_                                                                     |
 
 | [![OWASP Top 10](./badges/owasp-10.png)](https://tryhackme.com/jameskaois/badges/owasp-10) | [![1st Silver League](./badges/silver-league.png)](https://tryhackme.com/jameskaois/badges/silver-league) |
-|------------------------------------------------|------------------------------------------------|
-| *OWASP Top 10* | *1st Silver League* |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| _OWASP Top 10_                                                                             | _1st Silver League_                                                                                       |
+
+| [![IaC Security](./badges/iac-security.png)](https://tryhackme.com/jameskaois/badges/iac-security) | [![Raffle Royalty](./badges/raffle-royalty.png)](https://tryhackme.com/jameskaois/badges/raffle-royalty) |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| _IaC Security_                                                                                     | _Raffle Royalty_                                                                                         |
 
 | [![3 Day Streak](./badges/3-day-streak.png)](https://tryhackme.com/jameskaois/badges/3-day-streak) | [![7 Day Streak](./badges/7-day-streak.png)](https://tryhackme.com/jameskaois/badges/7-day-streak) |
-|------------------------------------------------|------------------------------------------------|
-| *3 Day Streak* | *7 Day Streak* |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| _3 Day Streak_                                                                                     | _7 Day Streak_                                                                                     |
 
 ## Disclaimer
+
 These writeups are for **educational purposes only**.  
-They are meant to serve as **hints and learning notes**. The goal is to encourage learning, problem-solving, and critical thinking while progressing through TryHackMe challenges.  
+They are meant to serve as **hints and learning notes**. The goal is to encourage learning, problem-solving, and critical thinking while progressing through TryHackMe challenges.
