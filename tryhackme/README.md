@@ -7,6 +7,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 
 ## Rooms/CTFs Covered
 
+- [Advent of Cyber 2024](./advent-of-cyber-2024.md)
 - [Learning Cyber Security](./beginner-path-intro.md)
 - [Blue](./blue.md)
 - [Careers In Cyber](./careers-in-cyber.md)
@@ -16,12 +17,16 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Further Nmap](./further-nmap.md)
 - [Google Dorking](./google-dorking.md)
 - [HTTPS In Detail](./http-in-detail.md)
+- [Hydra](./hydra.md)
 - [Intro To Networking](./intro-to-networking.md)
+- [Intro To Digital Forensics](./intro-to-digital-forensics.md)
+- [Intro To IaC](./intro-to-iac.md)
 - [Intro To Research](./intro-to-research.md)
 - [Junior Security Analyst Intro](./junior-security-analyst-intro.md)
 - [Linux Fundamentals Part 1](./linux-fundamentals-part-1.md)
 - [Linux Modules](./linux-modules.md)
 - [Network Services](./network-services.md)
+- [Network Services 2](./network-services-2.md)
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OWASP Top 10](./owasp-top-10.md)
