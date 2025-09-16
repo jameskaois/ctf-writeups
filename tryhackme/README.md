@@ -13,6 +13,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Careers In Cyber](./careers-in-cyber.md)
 - [Cyber Kill Chain](./cyber-kill-chain.md)
 - [Defensive Security Intro](./defensive-security-intro.md)
+- [Dectecting Web Attacks](./detecting-web-attacks.md)
 - [DNS In Detail](./dns-in-detail.md)
 - [Further Nmap](./further-nmap.md)
 - [Google Dorking](./google-dorking.md)
