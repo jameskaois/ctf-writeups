@@ -30,6 +30,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OWASP Top 10](./owasp-top-10.md)
+- [OWASP Top 10 2021](./owasp-top-10-2021.md)
 - [Pentesting Fundamentals](./pentesting-fundamentals.md)
 - [Pyramid Of Pain](./pyramid-of-pain.md)
 - [Red Team Fundamentals](./red-team-fundamentals.md)
