@@ -1,4 +1,4 @@
-# Crew CTF 2025 Writeups
+# Crew CTF 2025 Write-ups
 
 This was the first CTF event I joined with my newly created team with my college friends. Though the result wasn't really good, I was still happy because I could learn a lot from this event, especially in web security (the field that I was entrusted by the team).
 
