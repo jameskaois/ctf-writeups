@@ -10,4 +10,6 @@ This was the first CTF event I joined with my newly created team with my college
 
 To be honest, I had just completed 1 web challenge by myself which is the [Love Notes](./love-notes.md)
 
+Here are other two challenges that I tried to do during the event but failed. I also write solution about it for educational purposes: [Hate Notes](./hate-notes.md) and [Professor's View](./professor-view.md)
+
 For more writeups, join in [Crew CTF Discord](https://discord.gg/rW3dj7GhDq)
