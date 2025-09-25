@@ -26,7 +26,7 @@ It may contain:
 
 ---
 
-## Games Covered
+## CTFs Covered
 
 - [OverTheWire](./overthewire/README.md)
 - [TryHackMe](./tryhackme/README.md)
