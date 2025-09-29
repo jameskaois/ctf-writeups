@@ -111,7 +111,7 @@ Those two conditions just allow us to use `https://www.google.com/` and `https:/
 
 In this challenge, we will take advantage of **Google Translate**. GG Translate has a functionality to translate given page to whatever we want, you can try with `https://translate.google.com/translate?u=https://jameskaois.com`:
 
-![Guide image](./screenshots/simple-fetcher-1.png)
+![Guide image](../screenshots/simple-fetcher-1.png)
 
 By this way we can setup a server and a simple `index.html` has this script:
 
@@ -123,6 +123,6 @@ By this way we can setup a server and a simple `index.html` has this script:
 
 This script will help me us redirect the fetch system to get the flag. Combine this with GG Translate: `https://google.com/url?q=https://translate.google.com/translate?u=https://<YOUR_REDIRECT_DOMAIN>`
 
-![Guide image](./screenshots/simple-fetcher-2.png)
+![Guide image](../screenshots/simple-fetcher-2.png)
 
 Flag: `ASIS{ez_gg_open_redirector_68e04025dd853596d7762adc}`

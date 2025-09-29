@@ -45,11 +45,11 @@ The `Content-Security-Policy` just accept script from `/static/dashboard.js` and
 
 This is the interface we'll see when open the website:
 
-![Guide image](./screenshots/1.png)
+![Guide image](../screenshots/1.png)
 
 Try Sign up an account and Login to that account:
 
-![Guide image](./screenshots/2.png)
+![Guide image](../screenshots/2.png)
 
 Above is the main interface for logged in user and there is no other sites so this must be where we can hack to the website and get the flag.
 
@@ -120,16 +120,16 @@ Title: <script>alert('Hi Crew 2025');</script>
 Content: abc
 ```
 
-![Guide image](./screenshots/3.png)
+![Guide image](../screenshots/3.png)
 
 Type in the URL: `/dashboard?reviewNote=<NOTE_ID>`, you can find the `NOTE_ID` by inspecting the note element
 
-![Guide image](./screenshots/4.png)
+![Guide image](../screenshots/4.png)
 
 It doesn't show the alert as expected, however when you visit `/api/notes/<NOTE_ID>` you can see that the alert will appear.
 
-![Guide image](./screenshots/5.png)
-![Guide image](./screenshots/6.png)
+![Guide image](../screenshots/5.png)
+![Guide image](../screenshots/6.png)
 
 Therefore, we can execute script in this page `/api/notes/<NOTE_ID>`. XSS (Cross-Site Scripting) will take place in this challenge.
 
@@ -225,11 +225,11 @@ Title: <meta http-equiv="refresh" content="0;url=/api/notes/<SCRIPT_NOTE_ID>">
 Content: Anything
 ```
 
-![Guide image](./screenshots/7.png)
+![Guide image](../screenshots/7.png)
 
 Now ensure that your server is running properly, click `report`.
 
-![Guide image](./screenshots/8.png)
+![Guide image](../screenshots/8.png)
 
 After that, check your server files, you should see `out.ndjson`:
 
@@ -248,7 +248,7 @@ After that, check your server files, you should see `out.ndjson`:
 ]
 ```
 
-![Guide image](./screenshots/9.png)
+![Guide image](../screenshots/9.png)
 
 Currently, you can get the flag `crew{csp_trick_with_a_bit_of_css_spices_fBi4WVX1kGzPtavs}`.
 

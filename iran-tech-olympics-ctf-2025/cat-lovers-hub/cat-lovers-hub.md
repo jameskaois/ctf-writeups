@@ -92,11 +92,11 @@ We can exploit this app by just using interface.
 
 Firstly, submit a cat bio in `/submit`:
 
-![Guide image](./screenshots/cat-lovers-hub-1.png)
+![Guide image](../screenshots/cat-lovers-hub-1.png)
 
 In the `/player_preview?sid=<SID>`, open Dev Tools we can easily see the `token` I have mentioned before.
 
-![Guide image](./screenshots/cat-lovers-hub-2.png)
+![Guide image](../screenshots/cat-lovers-hub-2.png)
 
 Copy that token and use the curl command to attach request header `X-CTF` to `player` because in `/admin/preview_blob` route there is a condition:
 
@@ -125,6 +125,6 @@ Finally, you can get the flag.
 
 I also create a simple ready to use `.sh` code to pass this challenge efforlessly. You can view it [here](./cat-lovers-hub-solve.sh).
 
-![Guide image](./screenshots/cat-lovers-hub-3.png)
+![Guide image](../screenshots/cat-lovers-hub-3.png)
 
 Flag: `ASIS{CSP_HERO_ARE'NT_YOU_2a7590cb-9559-48c8-bdb9-ca41c0d184ed}`

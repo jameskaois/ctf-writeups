@@ -329,6 +329,6 @@ datetime.sys.modules["os"].environ["FLAG"]
 
 You can use `bob`/`alice` account and send this to your registered account **in the content** of the mail. You will receive the flag
 
-![Guide image](./screenshots/vibe-web-mail-1.png)
+![Guide image](../screenshots/vibe-web-mail-1.png)
 
 The flag is: `ASIS{PH1ND_50m3_V183_1n_3NV_de1d8572fde00fb04f06d1ce}`

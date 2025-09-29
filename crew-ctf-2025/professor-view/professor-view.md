@@ -65,7 +65,7 @@ In the markdown, that payload will become `&[a[srcdoc=&lt;iframe/src=&apos;https
 
 You can view the `server.js` created by `bubu` [here](https://github.com/AlbertoFDR/CTF/blob/main/created-challs/CrewCTF-2025/professors-view/solution/server.js)
 
-![Guide image](./screenshots/professor-view-1.webp)
+![Guide image](../screenshots/professor-view-1.webp)
 
 We can get the flag: `crew{permissions_are_fun_even_that_people_dont_really_care_1a3b7c9d}`
 
