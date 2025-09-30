@@ -30,7 +30,10 @@ It may contain:
 
 - [OverTheWire](./overthewire/README.md)
 - [TryHackMe](./tryhackme/README.md)
+- [W3Challs](./w3challs/README.md)
 - [Crew CTF 2025](./crew-ctf-2025/README.md)
+- [Iran Tech Olympic CTF 2025](./iran-tech-olympics-ctf-2025/README.md)
+- [SunShine CTF 2025](./sunshine-ctf-2025/README.md)
 
 ---
 
