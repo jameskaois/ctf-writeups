@@ -34,6 +34,7 @@ It may contain:
 - [Crew CTF 2025](./crew-ctf-2025/README.md)
 - [Iran Tech Olympic CTF 2025](./iran-tech-olympics-ctf-2025/README.md)
 - [SunShine CTF 2025](./sunshine-ctf-2025/README.md)
+- [WannaGame FreshMan CTF 2025](./wannagame-freshman-ctf-2025/README.md)
 
 ---
 
