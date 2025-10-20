@@ -12,5 +12,6 @@ I'm a player in **Web**, so my write-ups are all about web challenges:
 - [QnQSec Portal](./qnqsec-portal/README.md)
 - [Secure-Letter](./secure-letter/README.md)
 - [s3cr3ct-w3b](./s3cr3ct-w3b/README.md)
+- [s3cr3ct-w3b-revenge](./s3cr3ct-w3b-revenge/README.md)
 
 For more writeups, join in [QnQSec CTF Discord](https://discord.gg/q5UNp7kgWm)
