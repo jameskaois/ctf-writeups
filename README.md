@@ -36,6 +36,7 @@ It may contain:
 - [SunShine CTF 2025](./sunshine-ctf-2025/README.md)
 - [WannaGame FreshMan CTF 2025](./wannagame-freshman-ctf-2025/README.md)
 - [QnQSec CTF 2025](./qnqsec-ctf-2025/README.md)
+- [Pico Gym](./pico-gym/web-exploitation/README.md)
 
 ---
 
