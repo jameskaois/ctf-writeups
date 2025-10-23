@@ -8,6 +8,6 @@
 
 There are loads of challenges in this CTF event that I solved, however these are 3 challenges with highest point I have write-ups:
 
-- [Admin Tồi (Web)](./admin-toi/admin-toi.md)
-- [Open Read Flag (Web)](./open-read-flag/open-read-flag.md)
-- [Wave second for git (Misc)](./admin-toi/admin-toi.md)
+- [Admin Tồi (Web)](./admin-toi/README.md)
+- [Open Read Flag (Web)](./open-read-flag/README.md)
+- [Wave second for git (Misc)](./wave-second-for-git/README.md)

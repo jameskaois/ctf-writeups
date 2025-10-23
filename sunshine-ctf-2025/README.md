@@ -8,10 +8,10 @@
 
 I'm a player in **Web**, so my write-ups are all about web challenges:
 
-- [Lunar Auth](./lunar-auth/lunar-auth.md)
-- [Lunar Shop](./lunar-shop/lunar-shop.md)
-- [Web Forge](./web-forge/web-forge.md)
-- [Lunar File Invasion](./lunar-file-invasion/lunar-file-invasion.md)
-- [Intergalactic Webhook Service](./intergalactic-webhook-service/intergalactic-webhook-service.md)
+- [Lunar Auth](./lunar-auth/README.md)
+- [Lunar Shop](./lunar-shop/README.md)
+- [Web Forge](./web-forge/README.md)
+- [Lunar File Invasion](./lunar-file-invasion/README.md)
+- [Intergalactic Webhook Service](./intergalactic-webhook-service/README.md)
 
 For more writeups, join in [SunShine CTF Discord](https://discord.gg/ZynvJ6Jq)
