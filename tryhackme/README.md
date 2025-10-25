@@ -70,6 +70,10 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | _3 Day Streak_                                                                                     | _7 Day Streak_                                                                                     |
 
+| [![Linux Privesc](./badges/linux-privesc.png)](https://tryhackme.com/jameskaois/badges/linux-privesc) | [![]()]() |
+| ----------------------------------------------------------------------------------------------------- | --------- |
+| _Linux PrivEsc_                                                                                       | \_\_      |
+
 ## Disclaimer
 
 These writeups are for **educational purposes only**.  
