@@ -29,6 +29,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Linux Privilege Escalation](./linux-privilege-escalation.md)
 - [Network Services](./network-services.md)
 - [Network Services 2](./network-services-2.md)
+- [Network Traffic Basics](./network-traffic-basics.md)
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OWASP Top 10](./owasp-top-10.md)
