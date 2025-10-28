@@ -41,6 +41,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [SQL Injection](./sql-injection.md)
 - [Starting Out In Cyber Sec](./starting-out-in-cyber-sec.md.md)
 - [The Hacker Methodology](./the-hacker-methodology.md)
+- [Toolbox: Vim](./toolbox-vim.md)
 - [Unified Kill Chain](./unified-kill-chain.md)
 - [Web Application Security](./web-application-security.md)
 - [What Is Networking](./whatisnetworking.md)
