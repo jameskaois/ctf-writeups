@@ -16,6 +16,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Dectecting Web Attacks](./detecting-web-attacks.md)
 - [DNS In Detail](./dns-in-detail.md)
 - [Further Nmap](./further-nmap.md)
+- [Getting Started](./getting-started.md)
 - [Google Dorking](./google-dorking.md)
 - [HTTPS In Detail](./http-in-detail.md)
 - [Hydra](./hydra.md)
