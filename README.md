@@ -35,3 +35,4 @@ It may contain:
 - [WannaGame FreshMan CTF 2025](./wannagame-freshman-ctf-2025/README.md)
 - [QnQSec CTF 2025](./qnqsec-ctf-2025/README.md)
 - [Pico Gym](./pico-gym/web-exploitation/README.md)
+- [DreamHack](./dreamhack/web/README.md)
