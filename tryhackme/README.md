@@ -33,6 +33,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Network Services](./network-services.md)
 - [Network Services 2](./network-services-2.md)
 - [Network Traffic Basics](./network-traffic-basics.md)
+- [Offensive Security Intro 2](./offensive-security-intro-2.md)
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OpenVPN](./openvpn.md)
