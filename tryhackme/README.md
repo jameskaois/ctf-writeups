@@ -40,6 +40,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [OWASP Top 10](./owasp-top-10.md)
 - [OWASP Top 10 2021](./owasp-top-10-2021.md)
 - [Pentesting Fundamentals](./pentesting-fundamentals.md)
+- [Putting It All Together](./putting-it-all-together.md)
 - [Pyramid Of Pain](./pyramid-of-pain.md)
 - [Red Team Fundamentals](./red-team-fundamentals.md)
 - [Red Team OPSEC](./red-team-opsec.md)
@@ -76,9 +77,9 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | _3 Day Streak_                                                                                     | _7 Day Streak_                                                                                     |
 
-| [![Linux Privesc](./badges/linux-privesc.png)](https://tryhackme.com/jameskaois/badges/linux-privesc) | [![]()]() |
-| ----------------------------------------------------------------------------------------------------- | --------- |
-| _Linux PrivEsc_                                                                                       | \_\_      |
+| [![Linux Privesc](./badges/linux-privesc.png)](https://tryhackme.com/jameskaois/badges/linux-privesc) | [![World Wide Web](./badges/world-wide-web.png)](https://tryhackme.com/jameskaois/badges/world-wide-web) |
+| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| _Linux PrivEsc_                                                                                       | _World Wide Web_                                                                                         |
 
 ## Disclaimer
 
