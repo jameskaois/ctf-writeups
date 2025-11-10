@@ -10,3 +10,4 @@ This is my write-ups about web exploitation challenges:
 
 - [Mango](./mango/README.md)
 - [web-ssrf](./web-ssrf/README.md)
+- [blind-command](./blind-command/README.md)
