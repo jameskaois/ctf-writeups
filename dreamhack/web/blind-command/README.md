@@ -17,6 +17,8 @@
 
 ## Goal
 
+Bypass the check and read the flag file XD.
+
 ## My Solution
 
 The app is simple with just one `app.py`:
