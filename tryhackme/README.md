@@ -44,6 +44,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Pyramid Of Pain](./pyramid-of-pain.md)
 - [Red Team Fundamentals](./red-team-fundamentals.md)
 - [Red Team OPSEC](./red-team-opsec.md)
+- [Search Skills](./search-skills.md)
 - [SQL Injection](./sql-injection.md)
 - [Starting Out In Cyber Sec](./starting-out-in-cyber-sec.md.md)
 - [The Hacker Methodology](./the-hacker-methodology.md)
