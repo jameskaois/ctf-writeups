@@ -18,3 +18,4 @@ This is my write-ups about web exploitation challenges:
 - [CSP Bypass](./csp-bypass/README.md)
 - [baby-sqlite](./baby-sqlite/README.md)
 - [web-deserialize-python](./web-deserialize-python/README.md)
+- [DOM XSS](./dom-xss/README.md)
