@@ -16,3 +16,4 @@ This is my write-ups about web exploitation challenges:
 - [login-1](./login-1/README.md)
 - [sql injection bypass WAF Advanced](./sql-injection-bypass-waf-advanced/README.md)
 - [CSP Bypass](./csp-bypass/README.md)
+- [baby-sqlite](./baby-sqlite/README.md)
