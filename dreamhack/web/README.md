@@ -20,3 +20,4 @@ This is my write-ups about web exploitation challenges:
 - [web-deserialize-python](./web-deserialize-python/README.md)
 - [DOM XSS](./dom-xss/README.md)
 - [file-csp-1](./file-csp-1/README.md)
+- [Client Side Template Injection](./client-side-template-injection/README.md)
