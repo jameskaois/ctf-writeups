@@ -19,3 +19,4 @@ This is my write-ups about web exploitation challenges:
 - [baby-sqlite](./baby-sqlite/README.md)
 - [web-deserialize-python](./web-deserialize-python/README.md)
 - [DOM XSS](./dom-xss/README.md)
+- [file-csp-1](./file-csp-1/README.md)
