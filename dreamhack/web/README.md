@@ -21,3 +21,4 @@ This is my write-ups about web exploitation challenges:
 - [DOM XSS](./dom-xss/README.md)
 - [file-csp-1](./file-csp-1/README.md)
 - [Client Side Template Injection](./client-side-template-injection/README.md)
+- [weblog-1](./weblog-1/README.md)
