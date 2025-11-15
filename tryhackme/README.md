@@ -39,6 +39,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [OpenVPN](./openvpn.md)
 - [OWASP Top 10](./owasp-top-10.md)
 - [OWASP Top 10 2021](./owasp-top-10-2021.md)
+- [Passive Reconnaissance](./passive-reconnaissance.md)
 - [Pentesting Fundamentals](./pentesting-fundamentals.md)
 - [Putting It All Together](./putting-it-all-together.md)
 - [Pyramid Of Pain](./pyramid-of-pain.md)
