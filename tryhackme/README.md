@@ -7,6 +7,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 
 ## Rooms/CTFs Covered
 
+- [Active Reconnaissance](./active-reconnaissance.md)
 - [Advent of Cyber 2024](./advent-of-cyber-2024.md)
 - [Learning Cyber Security](./beginner-path-intro.md)
 - [Blue](./blue.md)
