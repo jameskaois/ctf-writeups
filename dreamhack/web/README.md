@@ -24,3 +24,4 @@ This is my write-ups about web exploitation challenges:
 - [Client Side Template Injection](./client-side-template-injection/README.md)
 - [weblog-1](./weblog-1/README.md)
 - [Relative Path Overwrite](./relative-path-overwrite/README.md)
+- [tomcat-manager](./tomcat-manager/README.md)
