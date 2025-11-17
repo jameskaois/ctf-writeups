@@ -19,6 +19,7 @@ This is my write-ups about web exploitation challenges:
 - [baby-sqlite](./baby-sqlite/README.md)
 - [web-deserialize-python](./web-deserialize-python/README.md)
 - [DOM XSS](./dom-xss/README.md)
+- [easy-login](./easy-login/README.md)
 - [file-csp-1](./file-csp-1/README.md)
 - [Client Side Template Injection](./client-side-template-injection/README.md)
 - [weblog-1](./weblog-1/README.md)
