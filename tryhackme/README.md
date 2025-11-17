@@ -12,6 +12,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Learning Cyber Security](./beginner-path-intro.md)
 - [Blue](./blue.md)
 - [Careers In Cyber](./careers-in-cyber.md)
+- [Common Attacks](./common-attacks.md)
 - [Cyber Kill Chain](./cyber-kill-chain.md)
 - [Defensive Security Intro](./defensive-security-intro.md)
 - [Dectecting Web Attacks](./detecting-web-attacks.md)
