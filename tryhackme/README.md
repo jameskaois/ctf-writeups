@@ -86,6 +86,10 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | _Linux PrivEsc_                                                                                       | _World Wide Web_                                                                                         |
 
+| [![Security Awareness](./badges/security-awareness.png)](https://tryhackme.com/jameskaois/badges/security-awareness) | [![]()]() |
+| -------------------------------------------------------------------------------------------------------------------- | --------- |
+| _Security Awareness_                                                                                                 | \_\_      |
+
 ## Disclaimer
 
 These writeups are for **educational purposes only**.  
