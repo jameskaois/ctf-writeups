@@ -26,3 +26,4 @@ This is my write-ups about web exploitation challenges:
 - [Relative Path Overwrite](./relative-path-overwrite/README.md)
 - [tomcat-manager](./tomcat-manager/README.md)
 - [md5 password](./md5-password/README.md)
+- [Addition calculator](./addition-calculator/README.md)
