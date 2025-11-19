@@ -35,6 +35,7 @@ This is my write-ups about web exploitation challenges:
 - [Dream Gallery](./level-2/dream-gallery/README.md)
 - [Are you admin?](./level-2/are-you-admin?/README.md)
 - [Secure Secret](./level-2/secure-secret/README.md)
+- [node-serialize](./level-2/node-serialize/README.md)
 
 ### Web Challenges Level 3
 
