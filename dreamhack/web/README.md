@@ -32,3 +32,4 @@ This is my write-ups about web exploitation challenges:
 - [crawling](./crawling/README.md)
 - [Relative Path Overwrite Advanced](./relative-path-overwrite-advanced/README.md)
 - [curling](./curling/README.md)
+- [Dream Gallery](./dream-gallery/README.md)
