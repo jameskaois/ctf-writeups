@@ -22,6 +22,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Google Dorking](./google-dorking.md)
 - [HTTPS In Detail](./http-in-detail.md)
 - [Hydra](./hydra.md)
+- [Input Manipulation & Prompt Injection](./input-manipulation-prompt-injection.md)
 - [Intro To Networking](./intro-to-networking.md)
 - [Intro To Digital Forensics](./intro-to-digital-forensics.md)
 - [Intro To IaC](./intro-to-iac.md)
