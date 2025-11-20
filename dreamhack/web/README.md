@@ -38,6 +38,7 @@ This is my write-ups about web exploitation challenges:
 - [node-serialize](./level-2/node-serialize/README.md)
 - [[wargame.kr]-dmbs335](./level-2/[wargame.kr]-dmbs335/README.md)
 - [development-env](./level-2/development-env/README.md)
+- [Hello, go!](./level-2/hello-go/README.md)
 
 ### Web Challenges Level 3
 
