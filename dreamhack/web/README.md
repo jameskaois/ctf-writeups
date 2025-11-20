@@ -36,6 +36,7 @@ This is my write-ups about web exploitation challenges:
 - [Are you admin?](./level-2/are-you-admin?/README.md)
 - [Secure Secret](./level-2/secure-secret/README.md)
 - [node-serialize](./level-2/node-serialize/README.md)
+- [[wargame.kr]-dmbs335](./level-2/[wargame.kr]-dmbs335/README.md)
 
 ### Web Challenges Level 3
 
