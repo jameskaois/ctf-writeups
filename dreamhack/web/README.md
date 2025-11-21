@@ -41,6 +41,7 @@ This is my write-ups about web exploitation challenges:
 - [Hello, go!](./level-2/hello-go/README.md)
 - [[wargame.kr] crack crack crack it](./level-2/[wargame.kr]-crack-crack-crack-it/README.md)
 - [Not-only](./level-2/not-only/README.md)
+- [Hangul](./level-2/hangul/README.md)
 
 ### Web Challenges Level 3
 
