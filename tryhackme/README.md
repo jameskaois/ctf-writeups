@@ -40,6 +40,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Offensive Security Intro](./offensive-security-intro.md)
 - [OHSINT](./ohsint.md)
 - [OpenVPN](./openvpn.md)
+- [OWASP Juice Shope](./owasp-juice-shop.md)
 - [OWASP Top 10](./owasp-top-10.md)
 - [OWASP Top 10 2021](./owasp-top-10-2021.md)
 - [Passive Reconnaissance](./passive-reconnaissance.md)
