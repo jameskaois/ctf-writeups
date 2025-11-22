@@ -42,6 +42,7 @@ This is my write-ups about web exploitation challenges:
 - [[wargame.kr] crack crack crack it](./level-2/[wargame.kr]-crack-crack-crack-it/README.md)
 - [Not-only](./level-2/not-only/README.md)
 - [Hangul](./level-2/hangul/README.md)
+- [Black Hacker Company](./level-2/black-hacker-company/README.md)
 
 ### Web Challenges Level 3
 
