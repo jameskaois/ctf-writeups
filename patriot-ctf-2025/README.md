@@ -11,3 +11,4 @@ I'm a player in web, so all my writeups about web challenges in Patriot CTF 2025
 - [Connection Tester](./connection-tester/README.md)
 - [Trust Vault](./trust-vault/README.md)
 - [Trust Fall](./trust-fall/README.md)
+- [🔐 SecureAuth™](./secureauth/README.md)
