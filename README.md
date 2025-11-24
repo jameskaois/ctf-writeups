@@ -36,3 +36,4 @@ It may contain:
 - [QnQSec CTF 2025](./qnqsec-ctf-2025/README.md)
 - [Pico Gym](./pico-gym/web-exploitation/README.md)
 - [DreamHack](./dreamhack/web/README.md)
+- [Patriot CTF 2025](./patriot-ctf-2025/README.md)
