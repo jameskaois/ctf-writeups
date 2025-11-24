@@ -45,6 +45,7 @@ This is my write-ups about web exploitation challenges:
 - [Black-Hacker-Company](./level-2/black-hacker-company/README.md)
 - [PTML](./level-2/ptml/README.md)
 - [LiteBoard](./level-2/liteboard/README.md)
+- [Special Letter Translator](./level-2/special-letter-translator/README.md)
 
 ### Web Challenges Level 3
 
