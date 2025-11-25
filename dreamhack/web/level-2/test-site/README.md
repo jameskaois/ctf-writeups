@@ -17,6 +17,8 @@
 
 ## Goal
 
+Escalate privelege and leveraging SSRF to get the flag.
+
 ## My Solution
 
 To get the flag in `/flag` we have to be the admin to get access to `/admin` however we're still not the admin now, and the `setcookie` and `readcookie` is hidden:
