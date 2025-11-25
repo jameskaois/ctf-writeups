@@ -46,6 +46,7 @@ This is my write-ups about web exploitation challenges:
 - [PTML](./level-2/ptml/README.md)
 - [LiteBoard](./level-2/liteboard/README.md)
 - [Special Letter Translator](./level-2/special-letter-translator/README.md)
+- [Test site](./level-2/test-site/README.md)
 
 ### Web Challenges Level 3
 
