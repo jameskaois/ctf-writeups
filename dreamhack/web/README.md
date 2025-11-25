@@ -47,6 +47,7 @@ This is my write-ups about web exploitation challenges:
 - [LiteBoard](./level-2/liteboard/README.md)
 - [Special Letter Translator](./level-2/special-letter-translator/README.md)
 - [Test site](./level-2/test-site/README.md)
+- [I LOVE XSS!](./level-2/i-love-xss/README.md)
 
 ### Web Challenges Level 3
 
