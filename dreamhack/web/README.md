@@ -58,3 +58,4 @@ This is my write-ups about web exploitation challenges:
 ### Web Challenges Level 4
 
 - [Flask-Dev](./level-4/Flask-Dev/README.md)
+- [web-HTTP-CLI](./level-4/web-HTTP-CLI/README.md)
