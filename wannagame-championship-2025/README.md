@@ -10,5 +10,5 @@ For me, web challenges in this event is really hard, I could just solve 1 challe
 
 - [Trust](./trust/README.md)
 - [longtrip](./longtrip/README.md)
-- [CTF-Guideline](./ctf-guideline/README.md)
+- [CTFguideline](./ctfguideline/README.md)
 - [Note Manager](./note-manager/README.md)
