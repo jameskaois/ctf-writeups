@@ -88,9 +88,9 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | _Linux PrivEsc_                                                                                       | _World Wide Web_                                                                                         |
 
-| [![Security Awareness](./badges/security-awareness.png)](https://tryhackme.com/jameskaois/badges/security-awareness) | [![]()]() |
-| -------------------------------------------------------------------------------------------------------------------- | --------- |
-| _Security Awareness_                                                                                                 | \_\_      |
+| [![Security Awareness](./badges/security-awareness.png)](https://tryhackme.com/jameskaois/badges/security-awareness) | [![Introduction to Security Enginner](./badges/introduction-to-security-engineering.png)](https://tryhackme.com/jameskaois/badges/intro-to-security-engineering) |
+| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Security Awareness_                                                                                                 | _Introduction to Security Engineer_                                                                                                                              |
 
 ## Disclaimer
 
