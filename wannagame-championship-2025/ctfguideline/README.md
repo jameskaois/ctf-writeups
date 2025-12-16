@@ -1,4 +1,4 @@
-# CTFguideline — SunShine CTF 2025
+# CTFguideline — WannaGame Championship CTF 2025
 
 > **Room / Challenge:** CTFguideline (Web)
 
@@ -7,7 +7,7 @@
 ## Metadata
 
 - **Author:** `jameskaois`
-- **CTF:** WannaGame Championship 2025
+- **CTF:** WannaGame Championship CTF 2025
 - **Challenge:** CTFguideline (web)
 - **Target / URL:** `https://ctf.cnsc.com.vn/games/1/challenges?challenge=23`
 - **Points:** `967`

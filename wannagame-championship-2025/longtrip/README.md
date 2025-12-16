@@ -1,4 +1,4 @@
-# longtrip — SunShine CTF 2025
+# longtrip — WannaGame Championship CTF 2025
 
 > **Room / Challenge:** longtrip (Web)
 
@@ -7,7 +7,7 @@
 ## Metadata
 
 - **Author:** `jameskaois`
-- **CTF:** WannaGame Championship 2025
+- **CTF:** WannaGame Championship CTF 2025
 - **Challenge:** longtrip (web)
 - **Target / URL:** `https://ctf.cnsc.com.vn/games/1/challenges?challenge=24`
 - **Points:** `947`

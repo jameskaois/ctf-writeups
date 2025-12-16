@@ -1,4 +1,4 @@
-# NoteManager — SunShine CTF 2025
+# NoteManager — WannaGame Championship CTF 2025
 
 > **Room / Challenge:** NoteManager (Web)
 
@@ -7,7 +7,7 @@
 ## Metadata
 
 - **Author:** `jameskaois`
-- **CTF:** WannaGame Championship 2025
+- **CTF:** WannaGame Championship CTF 2025
 - **Challenge:** NoteManager (web)
 - **Target / URL:** `https://ctf.cnsc.com.vn/games/1/challenges?challenge=22`
 - **Points:** `860`

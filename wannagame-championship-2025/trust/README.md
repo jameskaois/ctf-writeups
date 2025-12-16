@@ -1,4 +1,4 @@
-# Trust — SunShine CTF 2025
+# Trust — WannaGame Championship CTF 2025
 
 > **Room / Challenge:** Trust (Web)
 
@@ -7,7 +7,7 @@
 ## Metadata
 
 - **Author:** `jameskaois`
-- **CTF:** WannaGame Championship 2025
+- **CTF:** WannaGame Championship CTF 2025
 - **Challenge:** Trust (web)
 - **Target / URL:** `https://ctf.cnsc.com.vn/games/1/challenges?challenge=20`
 - **Points:** `500`
