@@ -37,3 +37,4 @@ It may contain:
 - [Pico Gym](./pico-gym/web-exploitation/README.md)
 - [DreamHack](./dreamhack/web/README.md)
 - [Patriot CTF 2025](./patriot-ctf-2025/README.md)
+- [WannaGame Championship 2025](./wannagame-championship-2025/README.md)
