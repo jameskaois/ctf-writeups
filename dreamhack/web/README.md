@@ -14,7 +14,7 @@ This is my write-ups about web exploitation challenges:
 
 ### Web Challenges Level 1
 
-- [session-basic](./level-1/session-basic/README.md)
+- [Level 1 Challenges](./level-1/README.md)
 
 ### Web Challenges Level 2
 
