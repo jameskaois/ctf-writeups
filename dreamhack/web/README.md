@@ -12,6 +12,10 @@ This is my write-ups about web exploitation challenges:
 
 - [Beginner Levels](./beginner-level/README.md)
 
+### Web Challenges Level 1
+
+- [session-basic](./level-1/session-basic/README.md)
+
 ### Web Challenges Level 2
 
 - [Mango](./level-2/mango/README.md)
