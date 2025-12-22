@@ -8,6 +8,10 @@
 
 This is my write-ups about web exploitation challenges:
 
+### Web Challenges Beginner Level
+
+- [Beginner Levels](./beginner-level/README.md)
+
 ### Web Challenges Level 2
 
 - [Mango](./level-2/mango/README.md)
