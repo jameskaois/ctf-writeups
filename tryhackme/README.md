@@ -92,6 +92,10 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Security Awareness_                                                                                                 | _Introduction to Security Engineer_                                                                                                                              |
 
+| [![Advent Of Cyber 2025](./badges/advent-of-cyber-2025.png)](https://tryhackme.com/jameskaois/badges/advent-of-cyber-2025) | [![Advent Of Cyber 2024](./badges/advent-of-cyber-2024.png)](https://tryhackme.com/jameskaois/badges/advent-of-cyber-2024) |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| _Advent of Cyber 2025_                                                                                                     | _Advent of Cyber 2024_                                                                                                     |
+
 ## Disclaimer
 
 These writeups are for **educational purposes only**.  
