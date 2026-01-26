@@ -26,15 +26,24 @@ It may contain:
 
 ## CTFs / Challenges Covered
 
+### Platforms
+
 - [OverTheWire](./overthewire/README.md)
 - [TryHackMe](./tryhackme/README.md)
 - [W3Challs](./w3challs/README.md)
+- [Pico Gym](./pico-gym/web-exploitation/README.md)
+- [DreamHack](./dreamhack/web/README.md)
+
+### CTF Competitions 2026
+
+- [VSL CTF 2026](./vsl-ctf-2026/README.md)
+
+### CTF Competitions 2025
+
 - [Crew CTF 2025](./crew-ctf-2025/README.md)
 - [Iran Tech Olympic CTF 2025](./iran-tech-olympics-ctf-2025/README.md)
 - [SunShine CTF 2025](./sunshine-ctf-2025/README.md)
 - [WannaGame FreshMan CTF 2025](./wannagame-freshman-ctf-2025/README.md)
 - [QnQSec CTF 2025](./qnqsec-ctf-2025/README.md)
-- [Pico Gym](./pico-gym/web-exploitation/README.md)
-- [DreamHack](./dreamhack/web/README.md)
 - [Patriot CTF 2025](./patriot-ctf-2025/README.md)
 - [WannaGame Championship 2025](./wannagame-championship-2025/README.md)

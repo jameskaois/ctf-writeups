@@ -13,3 +13,5 @@ I'm a player in **Web**, so my write-ups are all about web challenges:
 - [Key Game](./key-game/README.md)
 - [Now-Session](./now-session/README.md)
 - [PyRunner](./pyrunner/README.md)
+- [PyRunner 2](./pyrunner2/README.md)
+- [Trust Issues](./trust-issues/README.md)
