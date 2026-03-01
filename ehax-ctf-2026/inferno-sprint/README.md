@@ -1,6 +1,6 @@
 # Inferno Sprint — EHAX CTF 2026
 
-> **Room / Challenge:** Inferno Sprint (Web)
+> **Room / Challenge:** Inferno Sprint (miscellaneous)
 
 ---
 
