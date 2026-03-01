@@ -8,7 +8,7 @@
 
 - **Author:** `jameskaois`
 - **CTF:** EHAX CTF 2026
-- **Challenge:** Borderline Personality (miscellaneous)
+- **Challenge:** Borderline Personality (Web)
 - **Target / URL:** `http://chall.ehax.in:9098/`
 - **Points:** `50`
 - **Date:** `01-03-2026`
