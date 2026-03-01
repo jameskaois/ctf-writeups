@@ -1,6 +1,6 @@
 # I can also do it — EHAX CTF 2026
 
-> **Room / Challenge:** I can also do it (Web)
+> **Room / Challenge:** I can also do it (miscellaneous)
 
 ---
 
