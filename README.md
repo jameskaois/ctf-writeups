@@ -37,6 +37,7 @@ It may contain:
 ### CTF Competitions 2026
 
 - [VSL CTF 2026](./vsl-ctf-2026/README.md)
+- [EHAX CTF 2026](./ehax-ctf-2026/README.md)
 
 ### CTF Competitions 2025
 
