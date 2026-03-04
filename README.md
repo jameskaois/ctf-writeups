@@ -48,3 +48,9 @@ It may contain:
 - [QnQSec CTF 2025](./qnqsec-ctf-2025/README.md)
 - [Patriot CTF 2025](./patriot-ctf-2025/README.md)
 - [WannaGame Championship 2025](./wannagame-championship-2025/README.md)
+
+### Certificates
+
+#### EHAX CTF 2026
+
+<p align="center"><img src="./certificates/ehaxctf2026.png" alt="EHAX CTF 2026" style="width: 75%;height:auto;"></p>
