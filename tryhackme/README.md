@@ -96,6 +96,10 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | _Advent of Cyber 2025_                                                                                                     | _Advent of Cyber 2024_                                                                                                     |
 
+| [![Bronze League](./badges/bronze-league.png)](https://tryhackme.com/jameskaois/badges/bronze-league) | [![]()]() |
+| ----------------------------------------------------------------------------------------------------- | --------- |
+| _Bronze League_                                                                                       | \_\_      |
+
 ## Disclaimer
 
 These writeups are for **educational purposes only**.  
