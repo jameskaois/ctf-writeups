@@ -12,6 +12,8 @@
 
 ---
 
-## Goal
-
 ## My Solution
+
+There is a really detailed writeup that I appreciate: https://www.vipin.xyz/blog/picoctf2026
+
+Here is just an updated solve script that will escape unexpected errors: [solve script](./paper-2-solve-script.py)
