@@ -40,6 +40,7 @@ It may contain:
 - [EHAX CTF 2026](./ehax-ctf-2026/README.md)
 - [UTCTF 2026](./utctf-2026/README.md)
 - [Pico CTF 2026](./pico-ctf-2026/README.md)
+- [UMass CTF 2026](./umass-ctf-2026/README.md)
 
 ### CTF Competitions 2025
 
