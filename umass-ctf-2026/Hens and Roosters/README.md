@@ -1,6 +1,6 @@
-# Bricktator — UMass CTF 2026
+# Hens and Roosters — UMass CTF 2026
 
-> **Room / Challenge:** Bricktator (Web)
+> **Room / Challenge:** Hens and Roosters (Web)
 
 ---
 
@@ -8,7 +8,7 @@
 
 - **Author:** `jameskaois`
 - **CTF:** UMass CTF 2026
-- **Challenge:** Bricktator (web)
+- **Challenge:** Hens and Roosters (web)
 
 ---
 
