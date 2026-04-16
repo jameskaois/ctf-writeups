@@ -16,7 +16,7 @@
 
 ## Goal
 
-Get admin approvals and get the flag.
+Gain enough studs to get the flag.
 
 ## My Solution
 
