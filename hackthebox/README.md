@@ -19,6 +19,7 @@ This is my write-ups about **RETIRED** machines/challenges/fortresses on HackThe
 - [Snapped (Hard)](./machines/hard/snapped.md)
 
 ### Challenges
+- [Space Explorer (Very Easy)](./challenges/space-explorer.md)
 
 ### Fortresses
 - [Akerva](./fortresses/akerva.md)
