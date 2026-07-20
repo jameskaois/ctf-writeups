@@ -33,6 +33,7 @@ It may contain:
 - [W3Challs](./w3challs/README.md)
 - [Pico Gym](./pico-gym/web-exploitation/README.md)
 - [DreamHack](./dreamhack/web/README.md)
+- [HackTheBox](./hackthebox/README.md)
 
 ### CTF Competitions 2026
 
