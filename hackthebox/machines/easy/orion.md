@@ -1,3 +1,5 @@
+# Orion HTB Easy Machine Writeup
+
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]
