@@ -1,6 +1,6 @@
 # Section 04: Host and Port Scanning
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

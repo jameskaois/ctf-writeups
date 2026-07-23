@@ -1,6 +1,6 @@
 # Section 07: Nmap Scripting Engine
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

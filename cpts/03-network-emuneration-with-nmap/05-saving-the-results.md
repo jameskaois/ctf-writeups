@@ -1,6 +1,6 @@
 # Section 05: Saving the Results
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

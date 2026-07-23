@@ -1,6 +1,6 @@
 # Section 11: Firewall and IDS/IPS Evasion - Medium Lab
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

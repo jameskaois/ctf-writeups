@@ -1,6 +1,6 @@
 # Section 10: Firewall and IDS/IPS Evasion - Easy Lab
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

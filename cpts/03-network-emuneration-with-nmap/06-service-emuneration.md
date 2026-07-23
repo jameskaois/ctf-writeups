@@ -1,6 +1,6 @@
 # Section 06: Service Emuneration
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

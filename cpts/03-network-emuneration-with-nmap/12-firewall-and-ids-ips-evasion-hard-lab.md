@@ -1,6 +1,6 @@
 # Section 12: Firewall and IDS/IPS Evasion - Hard Lab
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

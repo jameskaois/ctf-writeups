@@ -1,6 +1,6 @@
 # Section 03: Host Discovery
 
-Module: 03. Network Attacks
+Module: 03. Network Emuneration with Nmap
 
 ---
 

@@ -1,6 +1,6 @@
-# Module 03: Network Attacks
+# Module 03: Network Emuneration with Nmap
 
-Notes and answers for the Network Attacks module.
+Notes and answers for the Network Emuneration with Nmap module.
 
 ---
 
