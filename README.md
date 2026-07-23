@@ -35,6 +35,10 @@ It may contain:
 - [DreamHack](./dreamhack/web/README.md)
 - [HackTheBox](./hackthebox/README.md)
 
+### Certs
+
+- [HackTheBox CPTS](./cpts/README.md)
+
 ### CTF Competitions 2026
 
 - [VSL CTF 2026](./vsl-ctf-2026/README.md)
