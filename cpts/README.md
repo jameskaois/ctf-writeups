@@ -8,7 +8,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 
 ### Phase 1: Core Fundamentals & Reconnaissance
 - [01. Penetration Testing Process](./01-penetration-testing-process/README.md)
-- 02. Getting Started
+- [02. Getting Started](./02-getting-started/README.md)
 - 03. Network Attacks
 - 04. Footprinting
 - 05. Information Gathering - Web Edition
