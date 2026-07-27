@@ -12,6 +12,7 @@ This is my write-ups about **RETIRED** machines/challenges/fortresses on HackThe
 ### Machines
 - [Nexus (Easy)](./machines/easy/nexus.md)
 - [Orion (Easy)](./machines/easy/orion.md)
+- [Enigma (Easy)](./machines/easy/enigma.md)
 - [Abducted (Medium)](./machines/medium/abducted.md)
 - [DevArea (Medium)](./machines/medium/devarea.md)
 - [FireFlow (Medium)](./machines/medium/fireflow.md)
