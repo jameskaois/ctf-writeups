@@ -12,7 +12,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [03. Network Emuneration with Nmap](./03-network-emuneration-with-nmap/README.md)
 - [04. Footprinting](./04-footprinting/README.md)
 - [05. Information Gathering - Web Edition](./05-information-gathering-web-edition/README.md)
-- 06. Vulnerability Assessment
+- [06. Vulnerability Assessment](./06-vulnerability-assessment/README.md)
 
 ### Phase 2: Exploitation & Tooling
 - 07. File Transfers
