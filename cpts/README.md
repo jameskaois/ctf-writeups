@@ -17,7 +17,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 ### Phase 2: Exploitation & Tooling
 - [07. File Transfers](./07-file-transfers/README.md)
 - [08. Shells & Payloads](./08-shells-&-payloads/README.md)
-- 09. Using the Metasploit Framework
+- [09. Using the Metasploit Framework](./09-using-the-metasploit-framework/README.md)
 - 10. Password Attacks
 - 11. Attacking Web Applications with Ffuf
 - 12. Login Brute Forcing
