@@ -1,5 +1,6 @@
-# Snapped HTB Hard Machine Writeup
+# Snapped Linux Hard HTB Machine Writeup
 
+#cve-2026-3888
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

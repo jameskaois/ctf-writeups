@@ -1,5 +1,6 @@
-# Principal HTB Medium Machine Writeup
+# Principal Linux Medium HTB Machine Writeup
 
+#cve-2026-29000
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

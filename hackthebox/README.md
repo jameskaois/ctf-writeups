@@ -6,18 +6,32 @@
 
 ## Challenges Covered
 
-This is my write-ups about **RETIRED** machines/challenges/fortresses on HackTheBox:
-> Writeups for *ACTIVE* machines/challenges/fortresses are forbidden based on HackTheBox rules.
+This is my write-ups about machines/challenges/fortresses on HackTheBox:
 
 ### Machines
-- [Nexus (Easy)](./machines/easy/nexus.md)
-- [Orion (Easy)](./machines/easy/orion.md)
-- [Enigma (Easy)](./machines/easy/enigma.md)
-- [Abducted (Medium)](./machines/medium/abducted.md)
-- [DevArea (Medium)](./machines/medium/devarea.md)
-- [FireFlow (Medium)](./machines/medium/fireflow.md)
-- [Principal (Medium)](./machines/medium/principal.md)
-- [Snapped (Hard)](./machines/hard/snapped.md)
+
+#### Linux
+- [Cohort (Easy)](./machines/linux/easy/cohort.md)
+- [Connected (Easy)](./machines/linux/easy/connected.md)
+- [Enigma (Easy)](./machines/linux/easy/enigma.md)
+- [Nexus (Easy)](./machines/linux/easy/nexus.md)
+- [Orion (Easy)](./machines/linux/easy/orion.md)
+- [Paperwork (Easy)](./machines/linux/easy/paperwork.md)
+- [Reactor (Easy)](./machines/linux/easy/reactor.md)
+- [Abducted (Medium)](./machines/linux/medium/abducted.md)
+- [Bedside (Medium)](./machines/linux/medium/bedside.md)
+- [DevArea (Medium)](./machines/linux/medium/devarea.md)
+- [DevHub (Medium)](./machines/linux/medium/devhub.md)
+- [FireFlow (Medium)](./machines/linux/medium/fireflow.md)
+- [Helix (Medium)](./machines/linux/medium/helix.md)
+- [Principal (Medium)](./machines/linux/medium/principal.md)
+- [SmartHire (Medium)](./machines/linux/medium/smarthire.md)
+- [Snapped (Hard)](./machines/linux/hard/snapped.md)
+- [Cobblestone (Insane)](./machines/linux/insane/cobblestone.md)
+
+#### Windows
+- [Support (Easy)](./machines/windows/easy/support.md)
+- [DarkZeroReturns (Hard)](./machines/windows/hard/darkzeroreturns.md)
 
 ### Challenges
 - [Space Explorer (Very Easy)](./challenges/space-explorer.md)

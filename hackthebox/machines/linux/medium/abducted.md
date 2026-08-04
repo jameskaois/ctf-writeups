@@ -1,5 +1,6 @@
-# Abducted HTB Medium Machine Writeup
+# Abducted Linux Medium HTB Machine Writeup
 
+#cve-2026-4480
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

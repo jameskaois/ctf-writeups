@@ -1,5 +1,6 @@
-# Orion HTB Easy Machine Writeup
+# Orion Linux Easy HTB Machine Writeup
 
+#cve-2025-32432 #cve-2026-24061 
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

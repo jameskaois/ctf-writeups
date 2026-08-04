@@ -1,5 +1,6 @@
-# DevArea HTB Medium Machine Writeup
+# DevArea Linux Medium HTB Machine Writeup
 
+#cve-2022-46364 #cve-2025-54123
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

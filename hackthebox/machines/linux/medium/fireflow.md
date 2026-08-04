@@ -1,4 +1,4 @@
-# FireFlow HTB Medium Machine Writeup
+# FireFlow Linux Medium HTB Machine Writeup
 
 ## NMAP Emuneration
 ```bash

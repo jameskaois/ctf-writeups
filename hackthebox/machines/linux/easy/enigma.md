@@ -1,5 +1,6 @@
-# Enigma HTB Easy Machine Writeup
+# Enigma Linux Easy HTB Machine Writeup
 
+#cve-2026-38751
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]

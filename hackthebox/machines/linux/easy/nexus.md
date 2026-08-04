@@ -1,5 +1,6 @@
-# Nexus HTB Easy Machine Writeup
+# Nexus Linux Easy HTB Machine Writeup
 
+#cve-2026-38526
 ## NMAP Emuneration
 ```bash
 ┌──(jameskaois㉿kali)-[~]
@@ -266,26 +267,7 @@ jones@nexus:~$ cat user.txt
 jones@nexus:~$ 
 ```
 ## Get root flag
-```bash
-$ cd /tmp 
-$ git clone http://jones:'y27xb3ha!!74GbR'@git.nexus.htb/jones/rce.git 
-$ cd rce 
-$ touch README.md
-```
-```bash
-$ python3 /tmp/build.py Done: 025b473292e1fdcdb027771defd8d3d0279c709f 
-$ git push -u origin main --force
-```
-```bash
-jones@nexus:~$ cat /var/log/template-sync.log
-```
-```bash
-$ ssh -i /tmp/.k root@nexus.htb 
-Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-106-generic x86_64) 
-<SNIP> 
-root@nexus:~# ls -la /root/root.txt 
--rw-r----- 1 root root 21 Apr 23 18:14 /root/root.txt
-```
+![[nexus.pdf]]
 
 
 Achievement: https://labs.hackthebox.com/achievement/machine/2924947/948
