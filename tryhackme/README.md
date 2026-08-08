@@ -61,6 +61,7 @@ The focus is on documenting approaches, tools, and techniques that I used to sol
 - [Windows Fundamentals 1](./windows-fundamentals-1.md)
 - [Windows Fundamentals 2](./windows-fundamentals-2.md)
 - [Windows Fundamentals 3](./windows-fundamentals-3.md)
+- [Hacker Holidays 2026](./hacker-holidays-2026.md)
 
 ## TryHackMe Badges
 
