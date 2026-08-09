@@ -19,7 +19,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [08. Shells & Payloads](./08-shells-&-payloads/README.md)
 - [09. Using the Metasploit Framework](./09-using-the-metasploit-framework/README.md)
 - [10. Password Attacks](./10-password-attacks/README.md)
-- 11. Attacking Web Applications with Ffuf
+- [11. Attacking Common Services](./11-attacking-common-services/README.md)
 - 12. Login Brute Forcing
 
 ### Phase 3: Web Application Attacks
