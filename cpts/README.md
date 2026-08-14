@@ -21,6 +21,9 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [10. Password Attacks](./10-password-attacks/README.md)
 - [11. Attacking Common Services](./11-attacking-common-services/README.md)
 - [12. Pivoting, Tunneling, and Port Forwarding](./12-pivoting-tunneling-and-port-forwarding/README.md)
+- [Optional. Windows Fundamentals](./optional-windows-fundamentals/README.md)
+- [Optional. Intro to Active Directory](./optional-intro-to-active-directory/README.md)
+<!-- - [13. Active Directory Enumeration & Attacks](./13-active-directory-emuneration-&-attacks/README.md) -->
 
 ### Phase 3: Web Application Attacks
 - 13. SQL Injection Fundamentals
@@ -32,7 +35,6 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - 19. Attacking Web Applications
 
 ### Phase 4: Enterprise & Post-Exploitation
-- 20. Active Directory Enumeration & Attacks
 - 21. Linux Privilege Escalation
 - 22. Windows Privilege Escalation
 - 23. Documentation & Reporting
