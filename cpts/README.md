@@ -26,7 +26,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [13. Active Directory Enumeration & Attacks](./13-active-directory-emuneration-&-attacks/README.md)
 
 ### Phase 3: Web Application Attacks
-- 13. SQL Injection Fundamentals
+- [14. Using Web Proxies](./14-using-web-proxies/README.md)
 - 14. SQLMap Essentials
 - 15. Cross-Site Scripting (XSS)
 - 16. File Inclusion
