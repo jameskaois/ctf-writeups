@@ -31,6 +31,7 @@ This is my write-ups about machines/challenges/fortresses on HackTheBox:
 
 #### Windows
 - [Support (Easy)](./machines/windows/easy/support.md)
+- [DanglingTree (Medium)](./machines/windows/medium/danglingtree.md)
 - [DarkZeroReturns (Hard)](./machines/windows/hard/darkzeroreturns.md)
 
 ### Challenges
@@ -38,5 +39,10 @@ This is my write-ups about machines/challenges/fortresses on HackTheBox:
 
 ### Fortresses
 - [Akerva](./fortresses/akerva.md)
-- [Jet](./fortresses/jet.md)
+- [Context](./fortresses/context.md)
 - [Faraday](./fortresses/faraday.md)
+- [Jet](./fortresses/jet.md)
+- [Synacktiv](./fortresses/synacktiv.md)
+
+### Handbook & Cheat Sheets
+- [HackTheBox Handbook](./handbook.md)
