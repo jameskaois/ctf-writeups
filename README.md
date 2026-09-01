@@ -34,6 +34,7 @@ It may contain:
 - [Pico Gym](./pico-gym/web-exploitation/README.md)
 - [DreamHack](./dreamhack/web/README.md)
 - [HackTheBox](./hackthebox/README.md)
+- [HackMyVM](./hackmyvm/README.md)
 
 ### Certs
 
