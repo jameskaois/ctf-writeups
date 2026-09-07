@@ -28,7 +28,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 ### Phase 3: Web Application Attacks
 - [14. Using Web Proxies](./14-using-web-proxies/README.md)
 - [15. Attacking Web Applications with Ffuf](./15-attacking-web-applications-with-ffuf/README.md)
-- 15. Cross-Site Scripting (XSS)
+- [16. Login Brute Forcing](./16-login-brute-forcing/README.md)
 - 16. File Inclusion
 - 17. Command Injections
 - 18. Web Attacks
