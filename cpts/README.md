@@ -30,7 +30,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [15. Attacking Web Applications with Ffuf](./15-attacking-web-applications-with-ffuf/README.md)
 - [16. Login Brute Forcing](./16-login-brute-forcing/README.md)
 - [17. SQL Injection Fundamentals](./17-sql-injection-fundamentals/README.md)
-- 17. Command Injections
+- [18. SQLMap Essentials](./18-sqlmap-essentials/README.md)
 - 18. Web Attacks
 - 19. Attacking Web Applications
 
