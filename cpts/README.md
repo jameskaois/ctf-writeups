@@ -31,7 +31,8 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [16. Login Brute Forcing](./16-login-brute-forcing/README.md)
 - [17. SQL Injection Fundamentals](./17-sql-injection-fundamentals/README.md)
 - [18. SQLMap Essentials](./18-sqlmap-essentials/README.md)
-- 18. Web Attacks
+- [19. Cross-Site Scripting (XSS)](./19-cross-site-scripting-xss/README.md)
+- [20. File Inclusion](./20-file-inclusion/README.md)
 - 19. Attacking Web Applications
 
 ### Phase 4: Enterprise & Post-Exploitation
