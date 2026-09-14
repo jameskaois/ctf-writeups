@@ -1,4 +1,4 @@
-# Module 20: File Upload Attacks
+# Module 21: File Upload Attacks
 
 Notes and answers for the File Upload Attacks module.
 
