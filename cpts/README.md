@@ -34,6 +34,7 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [19. Cross-Site Scripting (XSS)](./19-cross-site-scripting-xss/README.md)
 - [20. File Inclusion](./20-file-inclusion/README.md)
 - [21. File Upload Attacks](./21-file-upload-attacks/README.md)
+- [22. Command Injections](./22-command-injections/README.md)
 
 ### Phase 4: Enterprise & Post-Exploitation
 - 21. Linux Privilege Escalation
