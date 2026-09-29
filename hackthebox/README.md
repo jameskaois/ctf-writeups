@@ -36,6 +36,7 @@ This is my write-ups about machines/challenges/fortresses on HackTheBox:
 
 ### Challenges
 - [Space Explorer (Very Easy)](./challenges/space-explorer.md)
+- [Sandcastle (Insane)](./challenges/sandcastle.md)
 
 ### Fortresses
 - [Akerva](./fortresses/akerva.md)
