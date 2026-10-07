@@ -80,7 +80,7 @@ Nmap done: 1 IP address (1 host up) scanned in 45.94 seconds
 
 ```
 ## Web Exploitation
-![[Pasted image 20260625202925.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260625202925.png)
 FreePBX app, version `16.0.40.7` that is vulnerable to `CVE-2025-57819`, use [POC](https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819/blob/main/watchTowr-vs-FreePBX-CVE-2025-57819.py) to get RCE
 ```bash
 ┌──(jameskaois㉿kali)-[~/Documents/hackthebox/connected]

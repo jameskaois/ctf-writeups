@@ -22,7 +22,7 @@ Use this to RDP to the target and successfully got into a Linux machine:
 ┌──(jameskaois㉿kali)-[~]
 └─$ xfreerdp /u:contractor /p:'Contractor2026!' /v:10.129.57.121
 ```
-![[Pasted image 20260929144457.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260929144457.png)
 ## Emuneration inside machine
 The jumpbox, has 2 wlan interfaces:
 ```bash
@@ -63,9 +63,9 @@ wlan3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 Open the browser:
-![[Pasted image 20260929144626.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260929144626.png)
 The `wifi.international.htb` doesn't have much to do with, `portal.international.htb` is what we can exploit, but to connect to it we have to connect to the international wifi.
-![[Pasted image 20260929144948.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260929144948.png)
 Emunerate the `portal.international.htb`, found the admin login page `/admin/login`, one interesting is Wireshark is installed in this jumpbox, capturing the requests of wlan3:
 ```bash
 ip link set wlan3 down
@@ -87,7 +87,7 @@ Got:
 ```
 ## Web Exploitation
 Use the captured credentials to login the admin page:
-![[Pasted image 20260929145451.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260929145451.png)
 Saw `Craft CMS 5.9.8`, the vulnerability is RCE, through Yii2 Behavior Injection, make a POST request to `/index.php?p=admin/actions/element-search/search`
 Payload:
 ```python

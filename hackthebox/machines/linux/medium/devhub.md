@@ -153,7 +153,7 @@ ssh -L 8888:127.0.0.1:8888 mcp-dev@devhub.htb
 ```
 
 Use `a7f3b2c9d8e1f4a5b6c7d8e9f0a1b2c3d4e5f6a7` to login as `analyst`
-![[Screenshot 2026-06-27 at 15.11.50.png]]
+![Screenshot](../../../screenshots/Screenshot_2026-06-27_at_15.11.50.png)
 ## Emuneration for Privilege Escalation
 From the previous `ps aux | grep "jupyter"` we also see a python3 (flask) app running as root:
 ```

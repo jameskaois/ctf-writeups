@@ -144,7 +144,7 @@ SELECT * FROM users
 .exit
 node@reactor:/opt/reactor-app$ 
 ```
-![[Pasted image 20260625170827.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260625170827.png)
 ```bash
 ┌──(jameskaois㉿kali)-[~/Documents/hackthebox/reactor]
 └─$ ssh engineer@10.129.11.8

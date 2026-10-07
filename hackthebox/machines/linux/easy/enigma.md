@@ -172,10 +172,10 @@ drwxr-xr-x  2 root root 4096 Feb 20 02:54 .
 drwxrwxrwt 14 root root  360 Jul  2 19:43 ..
 -rw-r--r--  1 root root 1751 Feb 20 02:53 New_Employee_Access.pdf
 ```
-![[Screenshot 2026-07-02 at 19.46.28.png]]
-![[Pasted image 20260702194930.png]]
+![Screenshot](../../../screenshots/Screenshot_2026-07-02_at_19.46.28.png)
+![Pasted image](../../../screenshots/Pasted_image_20260702194930.png)
 Using the same creds to login as sarah, found the creds I have been found so hard we are admin now :) no need to promote the users:
-![[Screenshot 2026-07-02 at 19.50.07.png]]
+![Screenshot](../../../screenshots/Screenshot_2026-07-02_at_19.50.07.png)
 ## Get user flag
 ```bash
 ┌──(jameskaois㉿kali)-[~/Documents/hackthebox/enigma]

@@ -342,7 +342,7 @@ dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
 Server fetched internal resource and returned contents.
 ```
 Confirming now we can use this to read files in the server, for the Hoverfly found CVE-2025-54123, however we have to be authorized in order to exploit this:
-![[Pasted image 20260627205546.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260627205546.png)
 Look for Hoverfly creds:
 ```bash
 ┌──(jameskaois㉿kali)-[~/Documents/hackthebox/devarea]

@@ -233,7 +233,7 @@ systemd-run --quiet --scope --unit="$SCOPE" --property=KillMode=control-group --
 exit 0
 ```
 Other files in `/home/operator`:
-![[Pasted image 20260705133732.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260705133732.png)
 ## Get root flag
 ```python
 # get_root.py
@@ -335,4 +335,4 @@ async def main():
 
 asyncio.run(main())
 ```
-![[Pasted image 20260705134527.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260705134527.png)

