@@ -26,11 +26,13 @@ This is my write-ups about machines/challenges/fortresses on HackTheBox:
 - [Helix (Medium)](./machines/linux/medium/helix.md)
 - [Principal (Medium)](./machines/linux/medium/principal.md)
 - [SmartHire (Medium)](./machines/linux/medium/smarthire.md)
+- [Layover (Medium)](./machines/linux/medium/layover.md)
 - [Snapped (Hard)](./machines/linux/hard/snapped.md)
 - [Cobblestone (Insane)](./machines/linux/insane/cobblestone.md)
 
 #### Windows
 - [Support (Easy)](./machines/windows/easy/support.md)
+- [Touch (Easy)](./machines/windows/easy/touch.md)
 - [DanglingTree (Medium)](./machines/windows/medium/danglingtree.md)
 - [DarkZeroReturns (Hard)](./machines/windows/hard/darkzeroreturns.md)
 
