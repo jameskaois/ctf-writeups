@@ -38,6 +38,8 @@ Solutions, notes, and answers for the HackTheBox Certified Penetration Tester (C
 - [23. Web Attacks](./23-web-attacks/README.md)
 
 ### Phase 4: Enterprise & Post-Exploitation
-- 21. Linux Privilege Escalation
-- 22. Windows Privilege Escalation
-- 23. Documentation & Reporting
+- [24. Attacking Common Applications](./24-attacking-common-applications/README.md)
+- 25. Linux Privilege Escalation
+- 26. Windows Privilege Escalation
+- 27. Documentation & Reporting
+- 28. Attacking Enterprise Networks
